@@ -1,49 +1,36 @@
 .nav-bar {
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    align-items: center;
     height: 80px;
     width: 100%;
-    padding: 0 5%;
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    background-color: aqua;
-    align-items: center;
+    z-index: 5;
+    padding: 0px 5%;
+    font-family: Comfortaa, sans-serif;
+    font-size: 20px;
 }
 
-.nav-bar-button {
-    height: 40px;
-    width: 40px;
-    justify-self: end;
-}
-
-.hidden-nav-bar {
-    width: 0%;
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    transition: .4s ease-in-out;
-}
-
-.hidden-nav-bar-actived {
-    width: 100%;
-    transition: .4s ease-in-out;
-}
-
-.close-nav-bar {
-    position: fixed;
-    right: 10px;
-    top:10px;
+.name-logo {
+    text-decoration: none;
+    color: #25282B;
 }
 
 .nav-bar-link-list {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    justify-items: flex-end;
+    max-width: 200px;
 }
 
-@media (min-width: 768px) {
-    .nav-bar-button {
-        display: none;
-    }
+@media (min-width: 500px) {
     .nav-bar-link-list {
-        display: block;
+        justify-self: flex-end;
+        width: 200px;
     }
+}
+
+.link {
+    text-decoration: none;
+    color: #25282B;
 }
