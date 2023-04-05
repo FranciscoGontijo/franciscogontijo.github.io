@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 
+//import CSS stylesheet
 import "./projects.css";
 
 //import images 
-import PomodoroProjectSrc from "../../assets/images/Pomodoro Project.png";
-import RentalCarProjectSrc from "../../assets/images/Rental Car.png";
+import PomodoroProjectMainSrc from "../../assets/images/Pomodoro Project.png";
+import PomodoroProjectStatsSrc from "../../assets/images/Pomodoro Stats.png";
+import PomodoroProjectSettingsSrc from "../../assets/images/Pomodoro Settings.png";
+import RentalCarProjectMainSrc from "../../assets/images/Rental Car.png";
+import RentalCarProjectFleetSrc from "../../assets/images/RentalCar Fleet Section.png";
+import RentalCarProjectContactSrc from "../../assets/images/RentalCar Contact Section.png";
 
 const Projects = () => {
     const [firstProjectStatus, setFirstProjectStatus] = useState('first-image');
@@ -28,7 +33,7 @@ const Projects = () => {
                 setSecondProjectStatus('second-image');
             };
             if (status === 'second-image') {
-                setSecondProjectStatus('first-image');
+                setSecondProjectStatus('third-image');
             };
             if (status === 'third-image') {
                 setSecondProjectStatus('first-image');
@@ -39,7 +44,7 @@ const Projects = () => {
                 setThirdProjectStatus('second-image');
             };
             if (status === 'second-image') {
-                setThirdProjectStatus('first-image');
+                setThirdProjectStatus('third-image');
             };
             if (status === 'third-image') {
                 setThirdProjectStatus('first-image');
@@ -96,17 +101,17 @@ const Projects = () => {
                         statistics for the user. The application showcases the use of a range of front-end and back-end
                         tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
                     <div className="view-project-div">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank"><button
+                        <a href="https://quickstopwatch.netlify.app/" target="_blank" rel="noreferrer"><button
                             className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank">
+                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank" rel="noreferrer">
                             <i className="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
                 <div className="project-img">
-                    {firstProjectStatus === "first-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {firstProjectStatus === "second-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {firstProjectStatus === "third-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
+                    {firstProjectStatus === "first-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
+                    {firstProjectStatus === "second-image" && <img src={PomodoroProjectStatsSrc} alt="pomodoro timer" />}
+                    {firstProjectStatus === "third-image" && <img src={PomodoroProjectSettingsSrc} alt="pomodoro timer" />}
                     <button className="go-back-image-button" onClick={() => handleBackImage(firstProjectStatus, 'first-project')}>Image</button>
                     <div className="tracking-balls">
                         <div className={firstProjectStatus === "first-image" ? "track-ball active-ball" : "track-ball"}></div>
@@ -118,56 +123,53 @@ const Projects = () => {
             </div>
             <div className="each-project-container">
                 <div className="project-info">
-                    <h3>Pomodoro project</h3>
-                    <p>This project is a responsive React application that features a Pomodoro timer with settings and
-                        statistics for the user. The application showcases the use of a range of front-end and back-end
-                        tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
+                    <h3>Rental Car SPA</h3>
+                    <p>This is a full responsive React single-page application (SPA) for a rental car website. Focused
+                        only on the front-end part of the website.</p>
                     <div className="view-project-div">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank"><button
+                        <a href="https://quickstopwatch.netlify.app/" target="_blank" rel="noreferrer"><button
                             className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank">
+                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank" rel="noreferrer">
                             <i className="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
                 <div className="project-img">
-                    {secondProjectStatus === "first-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {secondProjectStatus === "second-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {secondProjectStatus === "third-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    <button className="go-back-image-button" onClick={() => handleBackImage(secondProjectStatus, 'first-project')}>Image</button>
+                    {secondProjectStatus === "first-image" && <img src={RentalCarProjectMainSrc} alt="Rental car project home page" />}
+                    {secondProjectStatus === "second-image" && <img src={RentalCarProjectFleetSrc} alt="Rental car project home page fleet section" />}
+                    {secondProjectStatus === "third-image" && <img src={RentalCarProjectContactSrc} alt="Rental car project contact page" />}
+                    <button className="go-back-image-button" onClick={() => handleBackImage(secondProjectStatus, 'second-project')}>Image</button>
                     <div className="tracking-balls">
                         <div className={secondProjectStatus === "first-image" ? "track-ball active-ball" : "track-ball"}></div>
                         <div className={secondProjectStatus === "second-image" ? "track-ball active-ball" : "track-ball"}></div>
                         <div className={secondProjectStatus === "third-image" ? "track-ball active-ball" : "track-ball"}></div>
                     </div>
-                    <button className="go-next-image-button" onClick={() => handleNextImage(secondProjectStatus, 'first-project')}>Image</button>
+                    <button className="go-next-image-button" onClick={() => handleNextImage(secondProjectStatus, 'second-project')}>Image</button>
                 </div>
             </div>
             <div className="each-project-container">
                 <div className="project-info">
-                    <h3>Pomodoro project</h3>
-                    <p>This project is a responsive React application that features a Pomodoro timer with settings and
-                        statistics for the user. The application showcases the use of a range of front-end and back-end
-                        tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
+                    <h3>Project name</h3>
+                    <p>Project description</p>
                     <div className="view-project-div">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank"><button
+                        <a href="https://quickstopwatch.netlify.app/" target="_blank" rel="noreferrer"><button
                             className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank">
+                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank" rel="noreferrer">
                             <i className="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
                 <div className="project-img">
-                    {thirdProjectStatus === "first-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {thirdProjectStatus === "second-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    {thirdProjectStatus === "third-image" && <img src={PomodoroProjectSrc} alt="pomodoro timer" />}
-                    <button className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'first-project')}>Image</button>
+                    {thirdProjectStatus === "first-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
+                    {thirdProjectStatus === "second-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
+                    {thirdProjectStatus === "third-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
+                    <button className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'third-project')}>Image</button>
                     <div className="tracking-balls">
                         <div className={thirdProjectStatus === "first-image" ? "track-ball active-ball" : "track-ball"}></div>
                         <div className={thirdProjectStatus === "second-image" ? "track-ball active-ball" : "track-ball"}></div>
                         <div className={thirdProjectStatus === "third-image" ? "track-ball active-ball" : "track-ball"}></div>
                     </div>
-                    <button className="go-next-image-button" onClick={() => handleNextImage(thirdProjectStatus, 'first-project')}>Image</button>
+                    <button className="go-next-image-button" onClick={() => handleNextImage(thirdProjectStatus, 'third-project')}>Image</button>
                 </div>
             </div>
         </section>
