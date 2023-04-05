@@ -1,0 +1,131 @@
+.mobile-projects-container {
+    display: grid;
+    row-gap: 60px;
+}
+
+.mobile-projects-container .project-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-projects-container .project-title h2 {
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0;
+}
+
+.mobile-projects-container .project-title .bar {
+    height: 3px;
+    width: 200px;
+    border-radius: 1.5px;
+    background-color: #049394;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.mobile-projects-container .project-container {
+    background-color: #fff;
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.mobile-projects-container .tracking-balls {
+    position: absolute;
+    background-color: #b8b8b8c7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100px;
+    justify-items: center;
+    bottom: 4%;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 4;
+    border-radius: 5px;
+    height: 12px;
+    align-items: center;
+}
+
+.mobile-projects-container .track-ball {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.mobile-projects-container .active-ball {
+    background-color:#049394;
+}
+
+.mobile-projects-container .project-info {
+    padding: 3% 5% 0;
+    min-height: 420px;
+    position: absolute;
+    top: -20px;
+}
+
+.mobile-projects-container .project-info h3 {
+    font-family: Quicksand, sans-serif;
+    font-size: 30px; 
+}
+
+.mobile-projects-container .project-info p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #6b6b6b;
+}
+
+.mobile-projects-container .view-project-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    width: 155px;
+    height: 43px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+    background-color: #049394;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.mobile-projects-container a {
+    text-decoration: none;
+}
+
+.mobile-projects-container .go-back-image-button {
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+}
+
+.mobile-projects-container .go-next-image-button {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+}
+
+.mobile-projects-container .project-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mobile-projects-container .project-img img {
+    height: 420px;
+}
