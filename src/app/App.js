@@ -8,6 +8,7 @@ import NavigationBar from '../components/navbar/navbar';
 import HomePage from '../pages/homepage';
 import AboutPage from '../pages/aboutpage';
 import ContactPage from '../pages/contactpage';
+import Footer from '../components/footer/footer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </>
   );
 };
