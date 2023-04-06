@@ -21,6 +21,7 @@
     padding: 0;
     color: #25282B;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .hero-banner .hero h3 {
