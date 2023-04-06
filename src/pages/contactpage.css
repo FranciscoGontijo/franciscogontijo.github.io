@@ -1,0 +1,137 @@
+.contact-page {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #049394;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .contact-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact-page {
+        margin: 2% 10%;
+    }
+}
+
+/* INFO SECTION */
+.contact-info-container {
+    text-align: center;
+}
+
+.contact-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contact-info-container .contact-title-container h3 {
+    font-family: Quicksand, sans-serif;
+    font-size: 25px;
+    margin-bottom: 0;
+    color: rgb(214, 214, 214);
+}
+
+.contact-info-container .contact-title-container .bar-type-2 {
+    height: 3px;
+    width: 150px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 1.5px;
+    align-self: center;
+}
+
+.contact-info-container p {
+    font-family: Comfortaa, sans-serif;
+    color: rgb(214, 214, 214);
+
+}
+
+/* FORM SECTION */
+.form-container {
+    padding: 5% 3%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-family: Quicksand, sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.contact-form input {
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    background-color: rgb(214, 214, 214);
+    color: #006b6b;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 5%;
+}
+
+.contact-form input::placeholder {
+    color: #049394;
+}
+
+.contact-form input:focus {
+    border: 1px solid #049394;
+    box-shadow: 0 0 3px #006b6b;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.contact-form textarea {
+    border-radius: 20px;
+    border: none;
+    min-height: 150px;
+    background-color: rgb(214, 214, 214);
+    color: #049394;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 5%;
+}
+
+.contact-form textarea::placeholder {
+    color: #049394;
+}
+
+.contact-form textarea:focus {
+    border: 1px solid #049394;
+    box-shadow: 0 0 3px #006b6b;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.contact-form button {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    color: #fff;
+    background-color: #049394;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #006b6b;
+}
+
