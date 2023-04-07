@@ -1,0 +1,122 @@
+.mobile-about-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-about-page .intro-banner {
+    text-align: center;
+}
+
+.mobile-about-page .intro-banner h2 {
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+}
+
+.mobile-about-page .intro-banner p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6b6b6b;
+}
+
+.mobile-about-page .profile-picture-container {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    align-self: center;
+    overflow: hidden;
+}
+
+.mobile-about-page .about-page-profile-picture {
+    width: 100%;
+}
+
+.mobile-about-page .background-wallpaper {
+    background-image: url("../assets/images/rm378-07c.jpg");
+    margin-top: 50px;
+}
+
+.mobile-about-page .about-text {
+    color: #fff;
+    text-align: center;
+    padding: 3% 5%;
+}
+
+.mobile-about-page .about-text h3 {
+    font-family: Quicksand, sans-serif;
+    font-size: 30px;
+}
+
+.mobile-about-page .about-text p {
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mobile-about-page .tools-and-languages-container {
+    background-color: #eaf2f2;
+    margin: 7%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 4%;
+}
+
+.mobile-about-page .tools-and-languages-container .languages-container {
+    margin: 50px 0;
+}
+
+.mobile-about-page .tools-and-languages-container h3 {
+    font-family: Quicksand, sans-serif;
+    font-size: 25px;
+}
+
+.mobile-about-page .tools-and-languages-container p {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.mobile-about-page .tools-and-languages-container .p-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.mobile-about-page .skills-banner {
+    background-color: antiquewhite;
+}
+
+.mobile-about-page .skills-banner img {
+    height: 50px;
+}
+
+/* SAY HELLO BUTTON */
+.mobile-about-page .about-page-contact-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hi-button {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    height: 50px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 40px;
+    background-color: #049394;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.hi-button .link {
+    color: #fff;
+}
