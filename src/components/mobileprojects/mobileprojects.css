@@ -111,12 +111,14 @@
     position: absolute;
     left: 4%;
     bottom: 4%;
+    font-size: 27px;
 }
 
 .mobile-projects-container .go-next-image-button {
     position: absolute;
     right: 4%;
     bottom: 4%;
+    font-size: 27px;
 }
 
 .mobile-projects-container .project-img {

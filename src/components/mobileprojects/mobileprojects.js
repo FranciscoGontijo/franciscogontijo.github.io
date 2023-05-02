@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+//import CSS
 import "./mobileprojects.css";
 
 //import images 
@@ -7,6 +8,10 @@ import PomodoroProjectSrc from "../../assets/images/Pomodoro Project.png";
 import PomodoroProjectChartsSrc from "../../assets/images/Pomodoro Stats.png";
 import RentalCarProjectSrc from "../../assets/images/Rental Car.png";
 import RentalCarProjectFleetSrc from "../../assets/images/RentalCar Fleet Section.png";
+
+//import icons from react icons
+import { MdArrowBackIos } from 'react-icons/md';
+import { MdArrowForwardIos } from "react-icons/md";
 
 const MobileDisplayProjects = () => {
     const [firstProjectStatus, setFirstProjectStatus] = useState('info');
@@ -116,8 +121,8 @@ const MobileDisplayProjects = () => {
                     <div className={firstProjectStatus === "first-image" ? "track-ball active-ball" : "track-ball"}></div>
                     <div className={firstProjectStatus === "second-image" ? "track-ball active-ball" : "track-ball"}></div>
                 </div>
-                <button className="go-back-image-button" onClick={() => handleBackImage(firstProjectStatus, 'first-project')} value={firstProjectStatus}>Image</button>
-                <button className="go-next-image-button" onClick={() => handleNextImage(firstProjectStatus, 'first-project')}>Image</button>
+                <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage(firstProjectStatus, 'first-project')} value={firstProjectStatus}>Image</MdArrowBackIos>
+                <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage(firstProjectStatus, 'first-project')}>Image</MdArrowForwardIos>
             </div>
             <div className="project-container">
                 <div className="tracking-balls">
@@ -143,8 +148,8 @@ const MobileDisplayProjects = () => {
                 {secondProjectStatus === "second-image" && <div className="project-img">
                     <img src={RentalCarProjectFleetSrc} alt="Rental car home page fleet section" />
                 </div>}
-                <button className="go-back-image-button" onClick={() => handleBackImage(secondProjectStatus, 'second-project')}>Image</button>
-                <button className="go-next-image-button" onClick={() => handleNextImage(secondProjectStatus, 'second-project')}>Image</button>
+                <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage(secondProjectStatus, 'second-project')}>Image</MdArrowBackIos>
+                <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage(secondProjectStatus, 'second-project')}>Image</MdArrowForwardIos>
             </div>
             <div className="project-container">
                 <div className="tracking-balls">
@@ -153,8 +158,8 @@ const MobileDisplayProjects = () => {
                     <div className={thirdProjectStatus === "second-image" ? "track-ball active-ball" : "track-ball"}></div>
                 </div>
                 {thirdProjectStatus === 'info' && <div className="project-info">
-                    <h3>Project name</h3>
-                    <p>Project description</p>
+                    <h3>E-Commerce website</h3>
+                    <p>Coming soon: Clothes store webpage. Using TypeScript and Next.JS</p>
                     <div className="view-project-div">
                         <a href="#" target="_blank" rel="noreferrer"><button className="view-project-button">View Project</button></a>
                         <a className="gitpage" href="https://github.com/FranciscoGontijo/Rental-car-website"
@@ -169,8 +174,8 @@ const MobileDisplayProjects = () => {
                 {thirdProjectStatus === "second-image" && <div className="project-img">
                     <img src={RentalCarProjectSrc} alt="project" />
                 </div>}
-                <button className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'third-project')}>Image</button>
-                <button className="go-next-image-button" onClick={() => handleNextImage(thirdProjectStatus, 'third-project')}>Image</button>
+                <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'third-project')}>Image</MdArrowBackIos>
+                <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage(thirdProjectStatus, 'third-project')}>Image</MdArrowForwardIos>
             </div>
         </section>
     )
