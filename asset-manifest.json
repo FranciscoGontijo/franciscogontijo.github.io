@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7ff76707.css",
+    "main.js": "/portfolio/static/js/main.77089dab.js",
+    "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/rm378-07c.jpg": "/portfolio/static/media/rm378-07c.e47f13bdc1bbfda54433.jpg",
+    "static/media/Profile Picture.jpg": "/portfolio/static/media/Profile Picture.d6c560cd64f66b9647bc.jpg",
+    "static/media/RentalCar Fleet Section.png": "/portfolio/static/media/RentalCar Fleet Section.d3bd8556c6d1920caf4d.png",
+    "static/media/Rental Car.png": "/portfolio/static/media/Rental Car.c30cd0c641f6acd51a85.png",
+    "static/media/Pomodoro Stats.png": "/portfolio/static/media/Pomodoro Stats.df779ba37f65472bbcaf.png",
+    "static/media/RentalCar Contact Section.png": "/portfolio/static/media/RentalCar Contact Section.28f53d8b3706770f959f.png",
+    "static/media/Pomodoro Project.png": "/portfolio/static/media/Pomodoro Project.a9754631ca8bc4e945a7.png",
+    "static/media/Pomodoro Settings.png": "/portfolio/static/media/Pomodoro Settings.d7fc1f34d296bcfbda8f.png",
+    "index.html": "/portfolio/index.html",
+    "main.7ff76707.css.map": "/portfolio/static/css/main.7ff76707.css.map",
+    "main.77089dab.js.map": "/portfolio/static/js/main.77089dab.js.map",
+    "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ff76707.css",
+    "static/js/main.77089dab.js"
+  ]
+}
