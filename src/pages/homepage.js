@@ -9,29 +9,32 @@ import MobileDisplayProjects from "../components/mobileprojects/mobileprojects";
 import HeroBanner from "../components/herobanner/herobanner";
 import Projects from "../components/projects/projects";
 
-
+//import CSS
 import "./homepage.css";
 
 
 const HomePage = () => {
     const screenSize = useWindowSize();
-    const [display, setDisplay] = useState('mobile');
+    const [display, setDisplay] = useState('laptop');
 
     useEffect(() => {
+        if (screenSize.width === undefined) {
+            return
+        }
         if (screenSize.width > 800) {
-          setDisplay('desktop');
+            setDisplay('laptop');
         }
         if (screenSize.width <= 800) {
-          setDisplay('mobile');
+            setDisplay('mobile');
         }
-      }, [screenSize]);
+    }, [screenSize]);
 
     return (
         <div>
             {display === 'mobile' && <HeroBannerMobile />}
             {display === 'mobile' && <MobileDisplayProjects />}
-            {display === 'desktop' && <HeroBanner />}
-            {display === 'desktop' && <Projects />}
+            {display === 'laptop' && <HeroBanner />}
+            {display === 'laptop' && <Projects />}
         </div>
     )
 };
