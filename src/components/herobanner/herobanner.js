@@ -2,6 +2,9 @@ import React from "react";
 
 import "./herobanner.css";
 
+//import icons from react icons
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+
 //import images
 import profilePictureSrc from "../../assets/images/Profile Picture.jpg";
 
@@ -13,18 +16,12 @@ const HeroBanner = () => {
                 <h1>Hello, my name is Francisco Gontijo</h1>
                 <p>Creating Engaging and User-Friendly Web Experiences</p>
                 <nav className="hero-nav">
-                    <a href="https://www.facebook.com/tatiko.gontijo" rel="noreferrer" target="_blank">
-                        <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/tatikogontijo/" rel="noreferrer" target="_blank">
-                        <i className="fab fa-instagram"></i>
-                    </a>
                     <a href="https://www.linkedin.com/in/francisco-alexandre-cardoso-melo-gontijo-5a469b239/"
                         rel="noreferrer" target="_blank">
-                        <i className="fab fa-linkedin-in"></i>
+                        <FaLinkedinIn className="social-icon" />
                     </a>
                     <a href="https://github.com/FranciscoGontijo" rel="noreferrer" target="_blank">
-                        <i className="fab fa-github"></i>
+                        <FaGithub className="social-icon" />
                     </a>
                 </nav>
             </div>
