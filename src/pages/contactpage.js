@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 import "./contactpage.css";
 
 const ContactPage = () => {
+    const [display, setDisplay] = useState('form');
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -14,6 +15,8 @@ const ContactPage = () => {
                 console.log(result.text);
                 console.log("message sent");
                 e.target.reset();
+                setDisplay('message')
+
             }, (error) => {
                 console.log(error.text);
             });
@@ -28,7 +31,7 @@ const ContactPage = () => {
                 </div>
                 <i></i><p>Sydney, NSW, Australia</p>
                 <i></i><p>+61 (410)-281-008</p>
-                <i></i><p>francisco@gmail.com</p>
+                <i></i><p>franciscoacmg@gmail.com</p>
                 <div className="bar-type-3"></div>
                 <div className="social-logos-container">
                     <nav className="hero-nav">
@@ -49,15 +52,20 @@ const ContactPage = () => {
                 </div>
                 <div className="bar-type-4"></div>
             </div>
-            <div className="form-container">
+            {display === 'form' && <div className="form-container">
                 <h2>Get in touch</h2>
-                <form  ref={form} onSubmit={sendEmail} className="contact-form">
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <input type="text" className="name-input" placeholder="Name" name="user_name" required />
                     <input type="email" className="email-input" placeholder="Email" name="user_email" required />
                     <textarea type="text" className="message-input" placeholder="Message" name="message" required />
                     <button type="submit" value="Send" className="form-send-button">SEND MESSAGE</button>
                 </form>
-            </div>
+            </div>}
+            {display === 'message' && <div>
+                <h1>Message sent successfully</h1>
+                <p>Thank you for getting in touch, as soon as possible I will respond to your message. Cheers</p>
+                <button onCLick={() => setDisplay('form')}>Back</button>
+            </div>}
         </section>
     )
 };
