@@ -12,6 +12,7 @@ import RentalCarProjectFleetSrc from "../../assets/images/RentalCar Fleet Sectio
 //import icons from react icons
 import { MdArrowBackIos } from 'react-icons/md';
 import { MdArrowForwardIos } from "react-icons/md";
+import { FaGithub } from 'react-icons/fa';
 
 const MobileDisplayProjects = () => {
     const [firstProjectStatus, setFirstProjectStatus] = useState('info');
@@ -102,11 +103,19 @@ const MobileDisplayProjects = () => {
                     <p>This project is a responsive React application that features a Pomodoro timer with settings and
                         statistics for the user. The application showcases the use of a range of front-end and back-end
                         tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
-                    <div className="view-project-div">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank"><button
-                            className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank">
-                            <i className="fab fa-github"></i>
+                    <div className="view-project-container">
+                        <a
+                            href="https://quickstopwatch.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/pomodoro-project"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
                 </div>}
@@ -134,11 +143,19 @@ const MobileDisplayProjects = () => {
                     <h3>Rental Car SPA</h3>
                     <p>This is a full responsive React single-page application (SPA) for a rental car website. Focused
                         only on the front-end part of the website.</p>
-                    <div className="view-project-div">
-                        <a href="#" target="_blank" rel="noreferrer"><button className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/Rental-car-website"
-                            target="_blank" rel="noreferrer">
-                            <i className="fab fa-github"></i>
+                    <div className="view-project-container">
+                        <a
+                            href="https://rentalcarproject.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
                 </div>}
@@ -160,11 +177,19 @@ const MobileDisplayProjects = () => {
                 {thirdProjectStatus === 'info' && <div className="project-info">
                     <h3>E-Commerce website</h3>
                     <p>Coming soon: Clothes store webpage. Using TypeScript and Next.JS</p>
-                    <div className="view-project-div">
-                        <a href="#" target="_blank" rel="noreferrer"><button className="view-project-button">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/Rental-car-website"
-                            target="_blank" rel="noreferrer">
-                            <i className="fab fa-github"></i>
+                    <div className="view-project-container">
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
                 </div>}
