@@ -113,10 +113,11 @@
     position: relative;
     overflow: hidden;
     justify-content: center;
+    padding: 4%;
 }
 
 .each-project-container .project-img img {
-    height: 430px;
+    max-height: 430px;
     object-fit: contain;
     justify-self: center;
 }

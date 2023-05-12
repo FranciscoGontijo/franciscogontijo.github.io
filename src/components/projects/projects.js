@@ -15,7 +15,9 @@ import PomodoroProjectSettingsSrc from "../../assets/images/Pomodoro Settings.pn
 import RentalCarProjectMainSrc from "../../assets/images/Rental Car.png";
 import RentalCarProjectFleetSrc from "../../assets/images/RentalCar Fleet Section.png";
 import RentalCarProjectContactSrc from "../../assets/images/RentalCar Contact Section.png";
-
+import AustralProjectStoreSrc from "../../assets/images/Austral Store Page.png";
+import AustralProjectShoppingCartSrc from "../../assets/images/Austral Shopping Cart.png";
+import AustralProjectAboutUsSrc from "../../assets/images/Austral About Page.png";
 
 
 const Projects = () => {
@@ -108,9 +110,18 @@ const Projects = () => {
                         statistics for the user. The application showcases the use of a range of front-end and back-end
                         tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
                     <div className="view-project-container">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank" rel="noreferrer"><button
-                            className="view-project-button" title="Live demo website">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://pomodoroapp-nu.vercel.app/"
+                            target="_blank" rel="noreferrer"
+                        >
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/pomodoro-project"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
@@ -131,12 +142,20 @@ const Projects = () => {
             <div className="each-project-container">
                 <div className="project-info">
                     <h3>Rental Car SPA</h3>
-                    <p>This is a full responsive React single-page application (SPA) for a rental car website. Focused
-                        only on the front-end part of the website.</p>
+                    <p>Project of a full responsive single-page application (SPA) using React for a rental car website. This project showcases my front-end expertise, delivering an intuitive and visually appealing user interface for exploring car rental options.</p>
                     <div className="view-project-container">
-                        <a href="https://rentalcarproject.netlify.app/" target="_blank" rel="noreferrer"><button
-                            className="view-project-button" title="Live demo website">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/Rental-car-website" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://rentalcarproject.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
@@ -156,20 +175,30 @@ const Projects = () => {
             </div>
             <div className="each-project-container">
                 <div className="project-info">
-                    <h3>Project name</h3>
-                    <p>Project description</p>
+                    <h3>Austral Project</h3>
+                    <p>Project of a store to showcase the use of Next.js, React, Redux, and TypeScript. This project demonstrates my expertise in utilizing these technologies for creating responsive website with efficient state management, and type-safe programming.</p>
                     <div className="view-project-container">
-                        <a href="https://quickstopwatch.netlify.app/" target="_blank" rel="noreferrer"><button
-                            className="view-project-button" title="Live demo website">View Project</button></a>
-                        <a className="gitpage" href="https://github.com/FranciscoGontijo/pomodoro-project" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://austral-project.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/pomodoro-project"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
                 </div>
                 <div className="project-img">
-                    {thirdProjectStatus === "first-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
-                    {thirdProjectStatus === "second-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
-                    {thirdProjectStatus === "third-image" && <img src={PomodoroProjectMainSrc} alt="pomodoro timer" />}
+                    {thirdProjectStatus === "first-image" && <img src={AustralProjectStoreSrc} alt="pomodoro timer" />}
+                    {thirdProjectStatus === "second-image" && <img src={AustralProjectShoppingCartSrc} alt="pomodoro timer" />}
+                    {thirdProjectStatus === "third-image" && <img src={AustralProjectAboutUsSrc} alt="pomodoro timer" />}
                     <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'third-project')}>Image</MdArrowBackIos>
                     <div className="tracking-balls">
                         <div className={thirdProjectStatus === "first-image" ? "track-ball active-ball" : "track-ball"}></div>

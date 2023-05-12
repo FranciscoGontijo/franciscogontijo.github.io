@@ -8,6 +8,9 @@ import PomodoroProjectSrc from "../../assets/images/Pomodoro Project.png";
 import PomodoroProjectChartsSrc from "../../assets/images/Pomodoro Stats.png";
 import RentalCarProjectSrc from "../../assets/images/Rental Car.png";
 import RentalCarProjectFleetSrc from "../../assets/images/RentalCar Fleet Section.png";
+import AustralProjectStoreSrc from "../../assets/images/Austral Store Page.png";
+import AustralProjectShoppingCartSrc from "../../assets/images/Austral Shopping Cart.png";
+
 
 //import icons from react icons
 import { MdArrowBackIos } from 'react-icons/md';
@@ -105,7 +108,7 @@ const MobileDisplayProjects = () => {
                         tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
                     <div className="view-project-container">
                         <a
-                            href="https://quickstopwatch.netlify.app/"
+                            href="https://pomodoroapp-nu.vercel.app/"
                             target="_blank"
                             rel="noreferrer">
                             <button className="view-project-button" title="Live demo website">View Project</button>
@@ -141,8 +144,7 @@ const MobileDisplayProjects = () => {
                 </div>
                 {secondProjectStatus === 'info' && <div className="project-info">
                     <h3>Rental Car SPA</h3>
-                    <p>This is a full responsive React single-page application (SPA) for a rental car website. Focused
-                        only on the front-end part of the website.</p>
+                    <p>Project of a full responsive single-page application (SPA) using React for a rental car website. This project showcases my front-end expertise, delivering an intuitive and visually appealing user interface for exploring car rental options.</p>
                     <div className="view-project-container">
                         <a
                             href="https://rentalcarproject.netlify.app/"
@@ -175,18 +177,18 @@ const MobileDisplayProjects = () => {
                     <div className={thirdProjectStatus === "second-image" ? "track-ball active-ball" : "track-ball"}></div>
                 </div>
                 {thirdProjectStatus === 'info' && <div className="project-info">
-                    <h3>E-Commerce website</h3>
-                    <p>Coming soon: Clothes store webpage. Using TypeScript and Next.JS</p>
+                    <h3>Austral Project</h3>
+                    <p>Project of a store to showcase the use of Next.js, React, Redux, and TypeScript. This project demonstrates my expertise in utilizing these technologies for creating responsive website with efficient state management, and type-safe programming.</p>
                     <div className="view-project-container">
                         <a
-                            href="#"
+                            href="https://austral-project.vercel.app/"
                             target="_blank"
                             rel="noreferrer">
                             <button className="view-project-button" title="Live demo website">View Project</button>
                         </a>
                         <a
                             className="gitpage"
-                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            href="https://github.com/FranciscoGontijo/Austral-Project"
                             target="_blank"
                             rel="noreferrer">
                             <FaGithub className="social-icon" title="Github project page" />
@@ -194,10 +196,10 @@ const MobileDisplayProjects = () => {
                     </div>
                 </div>}
                 {thirdProjectStatus === "first-image" && <div className="project-img">
-                    <img src={PomodoroProjectSrc} alt="project" />
+                    <img src={AustralProjectStoreSrc} alt="project" />
                 </div>}
                 {thirdProjectStatus === "second-image" && <div className="project-img">
-                    <img src={RentalCarProjectSrc} alt="project" />
+                    <img src={AustralProjectShoppingCartSrc} alt="project" />
                 </div>}
                 <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage(thirdProjectStatus, 'third-project')}>Image</MdArrowBackIos>
                 <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage(thirdProjectStatus, 'third-project')}>Image</MdArrowForwardIos>
