@@ -5,6 +5,7 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 @media (min-width: 600px) {
@@ -51,6 +52,19 @@
     font-family: Comfortaa, sans-serif;
     color: rgb(214, 214, 214);
 
+}
+
+/* SOCIAL ICONS SECTION */
+.social-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-icon {
+    color: rgb(214, 214, 214);
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* FORM SECTION */
@@ -135,3 +149,33 @@
     background-color: #006b6b;
 }
 
+/* SUCCESS MESSAGE SECTION */
+.success-message-container {
+    font-family: Nunito, sans-serif;
+    padding: 4% 3%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+@media (min-width: 600px) {
+    .success-message-container {
+        padding: 4% 10%;
+    }
+}
+
+.success-message-container button {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    color: rgb(214, 214, 214);
+    background-color: #049394;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;font-size: 16px;
+    cursor: pointer;
+    width: 120px;
+    transition: .1s ease-in-out;
+}
+
+.success-message-container button:hover {
+    background-color: #006b6b;
+}

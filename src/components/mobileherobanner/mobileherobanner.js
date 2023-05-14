@@ -19,7 +19,7 @@ const HeroBannerMobile = () => {
                 <h1>Francisco Gontijo</h1>
                 <p>Creating Engaging and User-Friendly Web Experiences:</p>
                 <nav className="hero-nav">
-                    <a href="https://www.linkedin.com/in/francisco-alexandre-cardoso-melo-gontijo-5a469b239/"
+                    <a href="https://www.linkedin.com/in/francisco-gontijo-5a469b239/"
                         rel="noreferrer" target="_blank">
                         <FaLinkedinIn className="social-icon" />
                     </a>

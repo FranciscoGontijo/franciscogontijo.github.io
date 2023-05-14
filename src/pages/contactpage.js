@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 
 import "./contactpage.css";
 
+//import icons from react icons
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+
 const ContactPage = () => {
     const [display, setDisplay] = useState('form');
     const form = useRef();
@@ -13,7 +16,6 @@ const ContactPage = () => {
         emailjs.sendForm('service_cvb99jc', 'template_njellqm', form.current, 'TyySgO-tzk-6JjuUI')
             .then((result) => {
                 console.log(result.text);
-                console.log("message sent");
                 e.target.reset();
                 setDisplay('message')
 
@@ -34,19 +36,13 @@ const ContactPage = () => {
                 <i></i><p>franciscoacmg@gmail.com</p>
                 <div className="bar-type-3"></div>
                 <div className="social-logos-container">
-                    <nav className="hero-nav">
-                        <a href="https://www.facebook.com/tatiko.gontijo" rel="noreferrer" target="_blank">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/tatikogontijo/" rel="noreferrer" target="_blank">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/francisco-alexandre-cardoso-melo-gontijo-5a469b239/"
+                    <nav className="social-nav">
+                        <a href="https://www.linkedin.com/in/francisco-gontijo-5a469b239/"
                             rel="noreferrer" target="_blank">
-                            <i className="fab fa-linkedin-in"></i>
+                            <FaLinkedinIn className="social-icon" />
                         </a>
                         <a href="https://github.com/FranciscoGontijo" rel="noreferrer" target="_blank">
-                            <i className="fab fa-github"></i>
+                            <FaGithub className="social-icon" />
                         </a>
                     </nav>
                 </div>
@@ -61,10 +57,10 @@ const ContactPage = () => {
                     <button type="submit" value="Send" className="form-send-button">SEND MESSAGE</button>
                 </form>
             </div>}
-            {display === 'message' && <div>
+            {display === 'message' && <div className="success-message-container">
                 <h1>Message sent successfully</h1>
                 <p>Thank you for getting in touch, as soon as possible I will respond to your message. Cheers</p>
-                <button onCLick={() => setDisplay('form')}>Back</button>
+                <button onClick={() => setDisplay('form')}>Back</button>
             </div>}
         </section>
     )
