@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7ff76707.css",
-    "main.js": "/portfolio/static/js/main.77089dab.js",
+    "main.css": "/portfolio/static/css/main.54929c47.css",
+    "main.js": "/portfolio/static/js/main.2aa03fe3.js",
     "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/rm378-07c.jpg": "/portfolio/static/media/rm378-07c.e47f13bdc1bbfda54433.jpg",
     "static/media/Profile Picture.jpg": "/portfolio/static/media/Profile Picture.d6c560cd64f66b9647bc.jpg",
+    "static/media/Austral Store Page.png": "/portfolio/static/media/Austral Store Page.da937683c16db8953d63.png",
+    "static/media/Austral Shopping Cart.png": "/portfolio/static/media/Austral Shopping Cart.8ec5e792d4b9598299f0.png",
+    "static/media/Austral About Page.png": "/portfolio/static/media/Austral About Page.dc4bb4adfa7ead67f235.png",
     "static/media/RentalCar Fleet Section.png": "/portfolio/static/media/RentalCar Fleet Section.d3bd8556c6d1920caf4d.png",
     "static/media/Rental Car.png": "/portfolio/static/media/Rental Car.c30cd0c641f6acd51a85.png",
-    "static/media/Pomodoro Stats.png": "/portfolio/static/media/Pomodoro Stats.df779ba37f65472bbcaf.png",
+    "static/media/Pomodoro Stats.png": "/portfolio/static/media/Pomodoro Stats.987cdd46864e0f86046f.png",
     "static/media/RentalCar Contact Section.png": "/portfolio/static/media/RentalCar Contact Section.28f53d8b3706770f959f.png",
     "static/media/Pomodoro Project.png": "/portfolio/static/media/Pomodoro Project.a9754631ca8bc4e945a7.png",
     "static/media/Pomodoro Settings.png": "/portfolio/static/media/Pomodoro Settings.d7fc1f34d296bcfbda8f.png",
     "index.html": "/portfolio/index.html",
-    "main.7ff76707.css.map": "/portfolio/static/css/main.7ff76707.css.map",
-    "main.77089dab.js.map": "/portfolio/static/js/main.77089dab.js.map",
+    "main.54929c47.css.map": "/portfolio/static/css/main.54929c47.css.map",
+    "main.2aa03fe3.js.map": "/portfolio/static/js/main.2aa03fe3.js.map",
     "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ff76707.css",
-    "static/js/main.77089dab.js"
+    "static/css/main.54929c47.css",
+    "static/js/main.2aa03fe3.js"
   ]
 }
