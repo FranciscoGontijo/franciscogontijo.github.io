@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import './navbar.css';
 
 const NavigationBar = () => {
+    const location = useLocation();
 
     return (
         <nav className="nav-bar">
@@ -11,15 +12,15 @@ const NavigationBar = () => {
                 <Link className="name-logo" to="/">Francisco Gontijo</Link>
             </div>
             <ul className="nav-bar-link-list">
-                <li className="nav-link">
+                {location.pathname !== '/' && <li className="nav-link">
                     <Link className="link" to="/">Home</Link>
-                </li>
-                <li className="nav-link">
+                </li>}
+                {location.pathname !== '/about' && <li className="nav-link">
                     <Link className="link" to="/about">About</Link>
-                </li>
-                <li className="nav-link">
+                </li>}
+                {location.pathname !== '/contact' && <li className="nav-link">
                     <Link className="link" to="/contact">Contact</Link>
-                </li>
+                </li>}
             </ul>
         </nav>
     )

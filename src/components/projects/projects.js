@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import "./projects.css";
 
 //import icons from react icons
-import { MdArrowBackIos } from 'react-icons/md';
-import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { FaGithub } from 'react-icons/fa';
 
 //import images 
@@ -18,7 +17,6 @@ import RentalCarProjectContactSrc from "../../assets/images/RentalCar Contact Se
 import AustralProjectStoreSrc from "../../assets/images/Austral Store Page.png";
 import AustralProjectShoppingCartSrc from "../../assets/images/Austral Shopping Cart.png";
 import AustralProjectAboutUsSrc from "../../assets/images/Austral About Page.png";
-
 
 const Projects = () => {
     const [firstProjectStatus, setFirstProjectStatus] = useState('first-image');

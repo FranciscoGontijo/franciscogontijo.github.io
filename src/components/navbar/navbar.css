@@ -17,7 +17,7 @@
 
 .nav-bar-link-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-self: flex-end;
     list-style: none;
 }

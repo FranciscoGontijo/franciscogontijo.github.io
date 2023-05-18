@@ -120,6 +120,7 @@
     max-height: 430px;
     object-fit: contain;
     justify-self: center;
+    margin-bottom: 25px;
 }
 
 .each-project-container .project-img .tracking-balls {

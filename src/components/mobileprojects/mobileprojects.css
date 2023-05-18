@@ -123,6 +123,7 @@
     left: 4%;
     bottom: 4%;
     font-size: 27px;
+    color: #049394;
 }
 
 .mobile-projects-container .go-next-image-button {
@@ -130,6 +131,7 @@
     right: 4%;
     bottom: 4%;
     font-size: 27px;
+    color: #049394;
 }
 
 .mobile-projects-container .project-img {
@@ -140,5 +142,6 @@
 }
 
 .mobile-projects-container .project-img img {
-    height: 420px;
+    max-height: 420px;
+   padding-bottom: 45px;
 }
