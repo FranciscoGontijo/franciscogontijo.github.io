@@ -106,7 +106,7 @@ const Projects = () => {
                     <h3>Pomodoro project</h3>
                     <p>This project is a responsive React application that features a Pomodoro timer with settings and
                         statistics for the user. The application showcases the use of a range of front-end and back-end
-                        tools and libraries as React, Redux, AWS Cognito, Mongoose, Axios, Chart.js and Moment</p>
+                        tools and libraries as React, Redux, AWS Cognito, Express, Mongoose, Axios, Chart.js and Moment</p>
                     <div className="view-project-container">
                         <a
                             href="https://pomodoroapp-nu.vercel.app/"
