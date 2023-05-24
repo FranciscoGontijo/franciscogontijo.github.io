@@ -24,11 +24,15 @@
 
 .nav-link {
     max-width: 100px;
+    margin-left: 20px;
 }
 
 @media (min-width: 500px) {
     .nav-bar-link-list {
         column-gap: 30px;
+    }
+    .nav-link {
+        margin: 0;
     }
 }
 
