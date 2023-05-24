@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Portfolio
+=========
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio showcasing my projects, skills, and experience as a Front-end Developer. It provides an overview of my work and serves as a comprehensive resource for anyone interested in learning more about me and my capabilities. Feel free to explore the sections below to get a glimpse of my expertise.
 
-## Available Scripts
+About Me
+--------
 
-In the project directory, you can run:
+As a Front-End Developer, I bring a strong foundation in HTML, CSS, JavaScript, and TypeScript to every project. With proficiency in React and experience in responsive design, I have the skills to create websites and applications that are both visually appealing and functional. Additionally, I am experienced in API integration and REST API design, enabling me to seamlessly integrate back-end systems with front-end user interfaces. Let's collaborate to build something great together.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Skills
+------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Languages
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- JavaScript
+- TypeScript
 
-### `npm run build`
+Development Tools
+- Next.js
+- React
+- React Router
+- Redux
+- Axios
+- Jest
+- AWS Cognito
+- Node.js
+- Express
+- Mongoose
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These are the languages and tools I have experience with and have used in my projects.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Projects
+--------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This portfolio includes three main projects that shows the use of the most used tools, libraries and frameworks now a days.
 
-### `npm run eject`
+Pomodoro Project:
+-------- 
+This project is a responsive React application that features a Pomodoro timer with settings and statistics for the user. The application showcases the use of a range of front-end and back-end tools and libraries :
+- React
+- Redux
+- React Router
+- Express
+- Mongoose
+- Axios
+- ChartJS
+- AWS Cognito
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Austral Project:
+--------
+This project demonstrates my expertise in utilizing these technologies for creating responsive website with efficient state management, and type-safe programming. Project of a store to showcase the use of :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Next.JS
+- React
+- Redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+RentalCar project:
+--------
+Project of a full responsive single-page application (SPA) using React for a rental car website. This project showcases my front-end expertise, delivering an intuitive and visually appealing user interface for exploring car rental options.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React 
 
-## Learn More
+Contact
+-------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can email me at franciscoacmg@gmail.com or contact me through github or https://www.linkedin.com/in/francisco-gontijo-5a469b239/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* * * * *
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio! I hope you find it informative and engaging. If you have any questions or would like to discuss potential opportunities, please don't hesitate to reach out. I look forward to connecting with you!
