@@ -158,6 +158,7 @@
     bottom: 3%;
     font-size: 25px;
     color: #049394;
+    cursor: pointer;
 }
 
 .each-project-container .go-next-image-button {
@@ -166,4 +167,5 @@
     bottom: 3%;
     font-size: 25px;
     color: #049394;
+    cursor: pointer;
 }
