@@ -57,8 +57,10 @@ const AboutPage = () => {
                                 <p className="p-title">Dev Tools: </p>
                                 <p>Next.JS</p>
                                 <p>React</p>
+                                <p>React Native</p>
                                 <p>React router</p>
                                 <p>Redux</p>
+                                <p>React context</p>
                                 <p>Axios</p>
                                 <p>Jest</p>
                                 <p>AWS Cognito</p>
@@ -107,8 +109,10 @@ const AboutPage = () => {
                             <p className="p-title">Dev Tools: </p>
                             <p>Next.JS</p>
                             <p>React</p>
+                            <p>React Native</p>
                             <p>React router</p>
                             <p>Redux</p>
+                            <p>React context</p>
                             <p>Axios</p>
                             <p>Jest</p>
                             <p>AWS Cognito</p>
