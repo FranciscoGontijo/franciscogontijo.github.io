@@ -7,7 +7,7 @@ import useWindowSize from "../util/useWindowSize";
 import HeroBannerMobile from "../components/mobileherobanner/mobileherobanner";
 import MobileDisplayProjects from "../components/mobileprojects/mobileprojects";
 import HeroBanner from "../components/herobanner/herobanner";
-import Projects from "../components/projects/projects";
+import Projects from "../components/projects/newProjects";
 
 //import CSS
 import "./homepage.css";
