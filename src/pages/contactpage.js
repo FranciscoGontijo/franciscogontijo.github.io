@@ -31,8 +31,8 @@ const ContactPage = () => {
                     <h3>Contact</h3>
                     <div className="bar-type-2"></div>
                 </div>
-                <i></i><p>Sydney, NSW, Australia</p>
-                <i></i><p>+61 (410)-281-008</p>
+                <i></i><p>Belo Horizonte, MG, Brazil</p>
+                <i></i><p>+55 (37) 99139-7356</p>
                 <i></i><p>franciscoacmg@gmail.com</p>
                 <div className="bar-type-3"></div>
                 <div className="social-logos-container">
