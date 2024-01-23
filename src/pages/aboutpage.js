@@ -8,6 +8,9 @@ import useWindowSize from "../util/useWindowSize";
 //import images
 import ProfilePictureSrc from "../assets/images/Profile Picture.jpg";
 
+//import skills
+import { skills } from "../data/data";
+
 const AboutPage = () => {
     const screenSize = useWindowSize();
     const [display, setDisplay] = useState('mobile');
@@ -55,20 +58,7 @@ const AboutPage = () => {
                             </div>
                             <div className="tools-container">
                                 <p className="p-title">Dev Tools: </p>
-                                <p>Next.JS</p>
-                                <p>React</p>
-                                <p>React Native</p>
-                                <p>React router</p>
-                                <p>Redux</p>
-                                <p>React context</p>
-                                <p>Axios</p>
-                                <p>Jest</p>
-                                <p>AWS Cognito</p>
-                                <p>NodeJS</p>
-                                <p>Express</p>
-                                <p>Mongoose</p>
-                                <p>Web Sokets</p>
-                                <p>JWT authentication</p>
+                                {skills.map(skill => <p>{skill}</p>)}
                             </div>
                         </div>
                     </div>
@@ -109,20 +99,7 @@ const AboutPage = () => {
                             </div>
                             <div className="tools-container">
                                 <p className="p-title">Dev Tools: </p>
-                                <p>Next.JS</p>
-                                <p>React</p>
-                                <p>React Native</p>
-                                <p>React router</p>
-                                <p>Redux</p>
-                                <p>React context</p>
-                                <p>Axios</p>
-                                <p>Jest</p>
-                                <p>AWS Cognito</p>
-                                <p>NodeJS</p>
-                                <p>Express</p>
-                                <p>Mongoose</p>
-                                <p>Web Sokets</p>
-                                <p>JWT authentication</p>
+                                {skills.map(skill => <p>{skill}</p>)}
                             </div>
                         </div>
                     </div>

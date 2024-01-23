@@ -12,16 +12,33 @@ export const firstProjectImages = [
     { imageUrl: RentalCarProjectMainSrc, alt: "Rental car project home page" },
     { imageUrl: RentalCarProjectFleetSrc, alt: "Rental car project fleet display" },
     { imageUrl: RentalCarProjectContactSrc, alt: "Rental car project contact page" }
-]
+];
 
 export const secondProjectImages = [
     { imageUrl: AustralProjectStoreSrc, alt: "Austral Store project home page" },
     { imageUrl: AustralProjectShoppingCartSrc, alt: "Austral Store project shopping cart" },
     { imageUrl: AustralProjectAboutUsSrc, alt: "Austral Store project about us page" },
-]
+];
 
 export const thirdProjectImages = [
     { imageUrl: PomodoroProjectMainSrc, alt: "Pomodoro project home page" },
     { imageUrl: PomodoroProjectStatsSrc, alt: "Pomodoro project stats page" },
     { imageUrl: PomodoroProjectSettingsSrc, alt: "Pomodoro project settings page" },
+];
+
+export const skills = [
+    'Next.JS',
+    'React',
+    'React Native',
+    'React router',
+    'Redux',
+    'React context',
+    'Axios',
+    'Jest',
+    'AWS Cognito',
+    'NodeJS',
+    'Express',
+    'Mongoose',
+    'Web Sokets',
+    'JWT authentication'
 ]
