@@ -18,7 +18,7 @@ const HomePage = () => {
     const [display, setDisplay] = useState('laptop');
 
     useEffect(() => {
-        if (screenSize.width === undefined) {
+        if (screenSize === 0) {
             return
         }
         if (screenSize.width > 800) {

@@ -40,5 +40,13 @@ export const skills = [
     'Express',
     'Mongoose',
     'Web Sokets',
-    'JWT authentication'
+    'JWT authentication',
+    'SOLID backend pattern',
+    'Prisma',
+    'SQL databases',
+    'NoSQL databases',
+    'Tailwind CSS',
+    'Docker',
+    'Drizzle',
+    'Clerk'
 ]
