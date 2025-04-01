@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b8fc0b5.css",
+    "main.js": "/static/js/main.5529ff0e.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/rm378-07c.jpg": "/static/media/rm378-07c.e47f13bdc1bbfda54433.jpg",
+    "static/media/Profile Picture.jpg": "/static/media/Profile Picture.d6c560cd64f66b9647bc.jpg",
+    "static/media/Austral Store Page.png": "/static/media/Austral Store Page.da937683c16db8953d63.png",
+    "static/media/Austral Shopping Cart.png": "/static/media/Austral Shopping Cart.8ec5e792d4b9598299f0.png",
+    "static/media/Austral About Page.png": "/static/media/Austral About Page.dc4bb4adfa7ead67f235.png",
+    "static/media/RentalCar Fleet Section.png": "/static/media/RentalCar Fleet Section.d3bd8556c6d1920caf4d.png",
+    "static/media/Rental Car.png": "/static/media/Rental Car.c30cd0c641f6acd51a85.png",
+    "static/media/Pomodoro Stats.png": "/static/media/Pomodoro Stats.987cdd46864e0f86046f.png",
+    "static/media/RentalCar Contact Section.png": "/static/media/RentalCar Contact Section.28f53d8b3706770f959f.png",
+    "static/media/Pomodoro Project.png": "/static/media/Pomodoro Project.a9754631ca8bc4e945a7.png",
+    "static/media/Pomodoro Settings.png": "/static/media/Pomodoro Settings.d7fc1f34d296bcfbda8f.png",
+    "index.html": "/index.html",
+    "main.0b8fc0b5.css.map": "/static/css/main.0b8fc0b5.css.map",
+    "main.5529ff0e.js.map": "/static/js/main.5529ff0e.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b8fc0b5.css",
+    "static/js/main.5529ff0e.js"
+  ]
+}
