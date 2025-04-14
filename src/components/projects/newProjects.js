@@ -17,41 +17,32 @@ const Projects = () => {
     const [fourthProjectIndex, setFourthProjectIndex] = useState(0);
 
     const handleNextImage = (project) => {
-        console.log('next image');
         if (project === 'First Project') {
             setFirstProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
-            console.log(firstProjectIndex);
         }
         if (project === 'Second Project') {
             setSecondProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
-            console.log(secondProjectIndex);
         }
         if (project === 'Third Project') {
             setThirdProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
-            console.log(thirdProjectIndex);
         }
         if (project === 'Fourth Project') {
             setFourthProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
-            console.log(fourthProjectIndex);
         }
     };
 
     const handleBackImage = (project) => {
         if (project === 'First Project') {
             setFirstProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
-            console.log(firstProjectIndex);
         }
         if (project === 'Second Project') {
             setSecondProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
-            console.log(secondProjectIndex);
         }
         if (project === 'Third Project') {
             setThirdProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
-            console.log(thirdProjectIndex);
         }
         if (project === 'Fourth Project') {
             setFourthProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
-            console.log(fourthProjectIndex);
         }
     };
 
