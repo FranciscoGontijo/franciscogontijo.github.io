@@ -37,7 +37,7 @@ const ContactPage = () => {
                 <div className="bar-type-3"></div>
                 <div className="social-logos-container">
                     <nav className="social-nav">
-                        <a href="https://www.linkedin.com/in/francisco-gontijo-5a469b239/"
+                        <a href="https://www.linkedin.com/in/franciscogontijo/"
                             rel="noreferrer" target="_blank">
                             <FaLinkedinIn className="social-icon" />
                         </a>

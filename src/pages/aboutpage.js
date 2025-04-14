@@ -6,7 +6,7 @@ import "./aboutpage.css";
 import useWindowSize from "../util/useWindowSize";
 
 //import images
-import ProfilePictureSrc from "../assets/images/Profile Picture.jpg";
+import ProfilePictureSrc from "../assets/images/Profile Picture.jpeg";
 
 //import skills
 import { skills } from "../data/data";
@@ -98,7 +98,7 @@ const AboutPage = () => {
                                 <p>HTML, CSS, JavaScript and TypeScript</p>
                             </div>
                             <div className="tools-container">
-                                <p className="p-title">Dev Tools: </p>
+                                <h3 className="p-title">Dev Tools: </h3>
                                 {skills.map(skill => <p>{skill}</p>)}
                             </div>
                         </div>

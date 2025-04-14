@@ -8,13 +8,13 @@ import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { FaGithub } from 'react-icons/fa';
 
 //import images 
-import { firstProjectImages, secondProjectImages, thirdProjectImages } from "../../data/data";
-
+import { firstProjectImages, secondProjectImages, thirdProjectImages, fourthProjectImages } from "../../data/data";
 
 const Projects = () => {
     const [firstProjectIndex, setFirstProjectIndex] = useState(0);
     const [secondProjectIndex, setSecondProjectIndex] = useState(0);
     const [thirdProjectIndex, setThirdProjectIndex] = useState(0);
+    const [fourthProjectIndex, setFourthProjectIndex] = useState(0);
 
     const handleNextImage = (project) => {
         console.log('next image');
@@ -29,6 +29,10 @@ const Projects = () => {
         if (project === 'Third Project') {
             setThirdProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
             console.log(thirdProjectIndex);
+        }
+        if (project === 'Fourth Project') {
+            setFourthProjectIndex(lastIndex => lastIndex < 2 ? ++lastIndex : lastIndex = 0);
+            console.log(fourthProjectIndex);
         }
     };
 
@@ -45,6 +49,10 @@ const Projects = () => {
             setThirdProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
             console.log(thirdProjectIndex);
         }
+        if (project === 'Fourth Project') {
+            setFourthProjectIndex(lastIndex => lastIndex > 0 ? --lastIndex : lastIndex = 2);
+            console.log(fourthProjectIndex);
+        }
     };
 
     return (
@@ -56,18 +64,23 @@ const Projects = () => {
 
             <div className="each-project-container">
                 <div className="project-info">
-                    <h3>Rental Car SPA</h3>
-                    <p>Project of a full responsive single-page application (SPA) using React for a rental car website. This project showcases my front-end expertise, delivering an intuitive and visually appealing user interface for exploring car rental options.</p>
+                    <h3>QuadraON</h3>
+                    <p>
+                        QuadraON is a full-stack court booking management application designed for sports facilities and players to easily manage and reserve courts in their city. Built with Next.js 14 and TypeScript, it delivers a modern, responsive, and accessible experience across all devices. The frontend utilizes <strong>React</strong>, <strong>Tailwind CSS</strong>, and <strong>react-hook-form</strong> for smooth UI interactions and form handling, with <strong>Zod</strong> providing robust schema validation.
+                    </p>
+                    <p>
+                        On the backend, quadraON is powered by <strong>Prisma ORM</strong> and a <strong>MongoDB</strong> database, providing a clean and scalable data layer. Authentication and user management are handled via <strong>Clerk</strong>, enabling secure login flows, conditional forms for guests vs. logged-in users, and ownership access controls.
+                    </p>
                     <div className="view-project-container">
                         <a
-                            href="https://rentalcarproject.netlify.app/"
+                            href="https://quadraon.com.br/"
                             target="_blank"
                             rel="noreferrer">
                             <button className="view-project-button" title="Live demo website">View Project</button>
                         </a>
                         <a
                             className="gitpage"
-                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            href="https://github.com/fernandobd42/courts-management-app"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -77,7 +90,7 @@ const Projects = () => {
                 </div>
                 <div className="project-img">
                     <img src={firstProjectImages[firstProjectIndex].imageUrl} alt={firstProjectImages[firstProjectIndex.alt]} />
-                    <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage('First Project')}/>
+                    <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage('First Project')} />
                     <div className="tracking-balls">
                         <div className={firstProjectIndex === 0 ? "track-ball active-ball" : "track-ball"}></div>
                         <div className={firstProjectIndex === 1 ? "track-ball active-ball" : "track-ball"}></div>
@@ -86,6 +99,7 @@ const Projects = () => {
                     <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage('First Project')}>Image</MdArrowForwardIos>
                 </div>
             </div>
+
             <div className="each-project-container">
                 <div className="project-info">
                     <h3>Austral Project</h3>
@@ -119,6 +133,7 @@ const Projects = () => {
                     <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage('Second Project')}>Image</MdArrowForwardIos>
                 </div>
             </div>
+
             <div className="each-project-container">
                 <div className="project-info">
                     <h3>Pomodoro project</h3>
@@ -138,7 +153,7 @@ const Projects = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaGithub classNam="social-icon" title="Github project page" />
+                            <FaGithub className="social-icon" title="Github project page" />
                         </a>
                     </div>
                 </div>
@@ -151,6 +166,39 @@ const Projects = () => {
                         <div className={thirdProjectIndex === 2 ? "track-ball active-ball" : "track-ball"}></div>
                     </div>
                     <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage('Third Project')}>Image</MdArrowForwardIos>
+                </div>
+            </div>
+
+            <div className="each-project-container">
+                <div className="project-info">
+                    <h3>Rental Car SPA</h3>
+                    <p>Project of a full responsive single-page application (SPA) using React for a rental car website. This project showcases my front-end expertise, delivering an intuitive and visually appealing user interface for exploring car rental options.</p>
+                    <div className="view-project-container">
+                        <a
+                            href="https://rentalcarproject.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button className="view-project-button" title="Live demo website">View Project</button>
+                        </a>
+                        <a
+                            className="gitpage"
+                            href="https://github.com/FranciscoGontijo/Rental-car-website"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <FaGithub className="social-icon" title="Github project page" />
+                        </a>
+                    </div>
+                </div>
+                <div className="project-img">
+                    <img src={fourthProjectImages[fourthProjectIndex].imageUrl} alt={fourthProjectImages[fourthProjectIndex.alt]} />
+                    <MdArrowBackIos className="go-back-image-button" onClick={() => handleBackImage('Fourth Project')} />
+                    <div className="tracking-balls">
+                        <div className={fourthProjectIndex === 0 ? "track-ball active-ball" : "track-ball"}></div>
+                        <div className={fourthProjectIndex === 1 ? "track-ball active-ball" : "track-ball"}></div>
+                        <div className={fourthProjectIndex === 2 ? "track-ball active-ball" : "track-ball"}></div>
+                    </div>
+                    <MdArrowForwardIos className="go-next-image-button" onClick={() => handleNextImage('Fourth Project')}>Image</MdArrowForwardIos>
                 </div>
             </div>
         </section>

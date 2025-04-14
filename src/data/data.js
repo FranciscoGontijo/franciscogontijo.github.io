@@ -7,11 +7,15 @@ import RentalCarProjectContactSrc from "../assets/images/RentalCar Contact Secti
 import AustralProjectStoreSrc from "../assets/images/Austral Store Page.png";
 import AustralProjectShoppingCartSrc from "../assets/images/Austral Shopping Cart.png";
 import AustralProjectAboutUsSrc from "../assets/images/Austral About Page.png";
+import QuadraONPlayerMainSrc from "../assets/images/QuadraON Player Main.png";
+import QuadraONPlayerBookingsSrc from "../assets/images/QuadraON Player Bookings.png";
+import QuadraONOwnerBookingsSrc from "../assets/images/QuadraON Owner Bookings.png";
+
 
 export const firstProjectImages = [
-    { imageUrl: RentalCarProjectMainSrc, alt: "Rental car project home page" },
-    { imageUrl: RentalCarProjectFleetSrc, alt: "Rental car project fleet display" },
-    { imageUrl: RentalCarProjectContactSrc, alt: "Rental car project contact page" }
+    { imageUrl: QuadraONPlayerMainSrc, alt: "QuadraON Saas player main page" },
+    { imageUrl: QuadraONPlayerBookingsSrc, alt: "QuadraON Saas player bookings page" },
+    { imageUrl: QuadraONOwnerBookingsSrc, alt: "QuadraON Saas owner bookings page" }
 ];
 
 export const secondProjectImages = [
@@ -25,6 +29,12 @@ export const thirdProjectImages = [
     { imageUrl: PomodoroProjectStatsSrc, alt: "Pomodoro project stats page" },
     { imageUrl: PomodoroProjectSettingsSrc, alt: "Pomodoro project settings page" },
 ];
+
+export const fourthProjectImages = [
+    { imageUrl: RentalCarProjectMainSrc, alt: "Rental car project home page" },
+    { imageUrl: RentalCarProjectFleetSrc, alt: "Rental car project fleet display" },
+    { imageUrl: RentalCarProjectContactSrc, alt: "Rental car project contact page" }
+]
 
 export const skills = [
     'Next.JS',
@@ -41,10 +51,9 @@ export const skills = [
     'Mongoose',
     'Web Sokets',
     'JWT authentication',
-    'SOLID backend pattern',
     'Prisma',
-    'SQL databases',
-    'NoSQL databases',
+    'PostgreSQL',
+    'MongoDB',
     'Tailwind CSS',
     'Docker',
     'Drizzle',

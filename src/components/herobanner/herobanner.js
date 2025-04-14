@@ -6,7 +6,7 @@ import "./herobanner.css";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 //import images
-import profilePictureSrc from "../../assets/images/Profile Picture.jpg";
+import profilePictureSrc from "../../assets/images/Profile Picture.jpeg";
 
 const HeroBanner = () => {
     return (
@@ -16,7 +16,7 @@ const HeroBanner = () => {
                 <h1>Hello, my name is Francisco Gontijo</h1>
                 <p>Creating Engaging and User-Friendly Web Experiences</p>
                 <nav className="hero-nav">
-                    <a href="https://www.linkedin.com/in/francisco-gontijo-5a469b239/"
+                    <a href="https://www.linkedin.com/in/franciscogontijo/"
                         rel="noreferrer" target="_blank">
                         <FaLinkedinIn className="social-icon" />
                     </a>
