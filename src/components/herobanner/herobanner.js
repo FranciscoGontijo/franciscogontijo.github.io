@@ -12,7 +12,7 @@ const HeroBanner = () => {
     return (
         <section className="hero-banner">
             <div className="hero">
-                <h3>FRONT-END WEB DEVELOPER</h3>
+                <h3>FULL STACK WEB DEVELOPER</h3>
                 <h1>Hello, my name is Francisco Gontijo</h1>
                 <p>Creating Engaging and User-Friendly Web Experiences</p>
                 <nav className="hero-nav">

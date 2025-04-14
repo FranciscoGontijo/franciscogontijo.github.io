@@ -29,35 +29,34 @@ const AboutPage = () => {
             {display === 'mobile' &&
                 <section className="mobile-about-page">
                     <div className="intro-banner">
-                        <h2>About me</h2>
-                        <p>Creating Engaging and User-Friendly Web Experiences</p>
+                        <h2>About Me</h2>
+                        <p>Building Scalable and User-Centered Web Applications</p>
                     </div>
                     <div className="profile-picture-container">
                         <img src={ProfilePictureSrc} className="about-page-profile-picture" alt="Francisco's profile" />
                     </div>
                     <div className="background-wallpaper">
                         <div className="about-text">
-                            <h3>Hi, I'm Francisco. Nice to meet you.</h3>
-                            <p>As a Front-End Developer, I bring a strong foundation in HTML, CSS,
-                                JavaScript, and TypeScript to every project.
-                                With proficiency in React and experience in responsive design,
-                                I have the skills to create websites and applications that are both visually appealing and functional.
-                                Additionally, I am experienced in API integration and REST API design,
-                                enabling me to seamlessly integrate back-end systems with front-end user interfaces.
-                                Let's collaborate to build something great together.</p>
+                            <h3>Hi, I'm Francisco. Full Stack Developer.</h3>
+                            <p>I specialize in building complete web solutions — from front-end user interfaces to back-end systems and APIs.
+                                My foundation in HTML, CSS, JavaScript, and TypeScript is paired with deep experience in React for the front end,
+                                and Node.js, Express, and databases like MongoDB or PostgreSQL on the back end.
+                                I focus on writing clean, scalable code and building responsive, performance-optimized applications.
+                                Whether it's designing a smooth UX, developing RESTful APIs, or deploying apps to production,
+                                I'm passionate about delivering full-featured digital experiences that solve real-world problems.</p>
                         </div>
                         <div className="tools-and-languages-container">
                             <div>
                                 <i></i>
                             </div>
-                            <h3>Web Developer</h3>
-                            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                            <h3>End-to-End Web Development</h3>
+                            <p>From concept to deployment, I enjoy crafting seamless and reliable web applications.</p>
                             <div className="languages-container">
                                 <p className="p-title">Languages: </p>
-                                <p>HTML, CSS, JavaScript and TypeScript</p>
+                                <p>JavaScript, TypeScript, HTML, CSS</p>
                             </div>
                             <div className="tools-container">
-                                <p className="p-title">Dev Tools: </p>
+                                <h3 className="p-title">Dev Tools & Technologies: </h3>
                                 {skills.map(skill => <p>{skill}</p>)}
                             </div>
                         </div>
@@ -70,35 +69,34 @@ const AboutPage = () => {
             {display === 'desktop' &&
                 <section className="big-screen-about-page">
                     <div className="intro-banner">
-                        <h2>Front-End Developer</h2>
-                        <p>Creating Engaging and User-Friendly Web Experiences</p>
+                        <h2>Full Stack Developer</h2>
+                        <p>Building Scalable and User-Centered Web Applications</p>
                     </div>
                     <div className="profile-picture-container">
                         <img src={ProfilePictureSrc} className="about-page-profile-picture" alt="Francisco's profile" />
                     </div>
                     <div className="background-wallpaper">
                         <div className="about-text">
-                            <h3>Hi, I'm Francisco. Nice to meet you.</h3>
-                            <p>As a Front-End Developer, I bring a strong foundation in HTML, CSS,
-                                JavaScript, and TypeScript to every project.
-                                With proficiency in React and experience in responsive design,
-                                I have the skills to create websites and applications that are both visually appealing and functional.
-                                Additionally, I am experienced in API integration and REST API design,
-                                enabling me to seamlessly integrate back-end systems with front-end user interfaces.
-                                Let's collaborate to build something great together.</p>
+                            <h3>Hi, I'm Francisco. Full Stack Developer.</h3>
+                            <p>I specialize in building complete web solutions — from front-end user interfaces to back-end systems and APIs.
+                                My foundation in HTML, CSS, JavaScript, and TypeScript is paired with deep experience in React for the front end,
+                                and Node.js, Express, and databases like MongoDB or PostgreSQL on the back end.
+                                I focus on writing clean, scalable code and building responsive, performance-optimized applications.
+                                Whether it's designing a smooth UX, developing RESTful APIs, or deploying apps to production,
+                                I'm passionate about delivering full-featured digital experiences that solve real-world problems.</p>
                         </div>
                         <div className="tools-and-languages-container">
                             <div>
                                 <i></i>
                             </div>
-                            <h3>Web Developer</h3>
-                            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                            <h3>End-to-End Web Development</h3>
+                            <p>From concept to deployment, I enjoy crafting seamless and reliable web applications.</p>
                             <div className="languages-container">
                                 <p className="p-title">Languages: </p>
-                                <p>HTML, CSS, JavaScript and TypeScript</p>
+                                <p>JavaScript, TypeScript, HTML, CSS</p>
                             </div>
                             <div className="tools-container">
-                                <h3 className="p-title">Dev Tools: </h3>
+                                <h3 className="p-title">Dev Tools & Technologies: </h3>
                                 {skills.map(skill => <p>{skill}</p>)}
                             </div>
                         </div>

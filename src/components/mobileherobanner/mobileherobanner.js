@@ -12,7 +12,7 @@ const HeroBannerMobile = () => {
     return (
         <section className="hero-banner-mobile">
             <div className="hero">
-                <h3>FRONT-END WEB DEVELOPER</h3>
+                <h3>FULL STACK WEB DEVELOPER</h3>
                 <div className="hero-banner-img">
                     <img src={profilePictureSrc} alt="Francisco profile" />
                 </div>
