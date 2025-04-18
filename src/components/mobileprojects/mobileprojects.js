@@ -74,7 +74,7 @@ const MobileDisplayProjects = () => {
                     </p>
                         <div className="view-project-container">
                             <a
-                                href="https://pomodoroapp-nu.vercel.app/"
+                                href="https://quadraon.com.br/"
                                 target="_blank"
                                 rel="noreferrer">
                                 <button className="view-project-button" title="Live demo website">View Project</button>
