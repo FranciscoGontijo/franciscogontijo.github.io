@@ -116,7 +116,7 @@ const content = {
                 { group: "Infra e ferramentas", items: ["Vercel", "GitHub Actions", "Docker", "AWS S3", "Clerk", "Asaas", "Vitest", "Git", "Claude Code"] }
             ],
             languagesTitle: "Idiomas",
-            languages: "Português (nativo) · Inglês (profissional)",
+            languages: "Português (nativo) · Inglês (profissional) · Espanhol (intermediário)",
             sayHello: "Diga olá!"
         },
         contact: {
@@ -250,7 +250,7 @@ const content = {
                 { group: "Infra & tools", items: ["Vercel", "GitHub Actions", "Docker", "AWS S3", "Clerk", "Asaas", "Vitest", "Git", "Claude Code"] }
             ],
             languagesTitle: "Languages",
-            languages: "Portuguese (native) · English (professional working proficiency)",
+            languages: "Portuguese (native) · English (professional working proficiency) · Spanish (intermediate)",
             sayHello: "Say hello!"
         },
         contact: {
