@@ -179,3 +179,31 @@
 .success-message-container button:hover {
     background-color: #006b6b;
 }
+
+/* ICONS AND LINKS IN THE INFO SECTION */
+.contact-info-container .contact-icon {
+    margin-right: 10px;
+    vertical-align: -2px;
+}
+
+.contact-info-container a {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+}
+
+.contact-info-container a:hover {
+    color: #fff;
+}
+
+.contact-form button:disabled {
+    background-color: #6b6b6b;
+    cursor: wait;
+}
+
+.contact-form .form-error {
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    color: #b3261e;
+    text-align: center;
+}

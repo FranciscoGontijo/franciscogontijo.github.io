@@ -1,20 +1,22 @@
-/* MOBILE SCREEN CSS */
-.mobile-about-page {
+/* A mesma página serve celular e desktop; .about-content-wide só abre as colunas. */
+.about-content {
     display: flex;
     flex-direction: column;
 }
 
-/* MOBILE INTRO BANNER SECTION */
-.mobile-about-page .intro-banner {
+/* INTRO BANNER SECTION */
+.about-content .intro-banner {
     text-align: center;
+    padding: 0 16px;
 }
 
-.mobile-about-page .intro-banner h2 {
+.about-content .intro-banner h2 {
     font-family: Nunito, sans-serif;
     font-size: 32px;
+    margin-bottom: 0;
 }
 
-.mobile-about-page .intro-banner p {
+.about-content .intro-banner p {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -22,7 +24,7 @@
     color: #6b6b6b;
 }
 
-.mobile-about-page .profile-picture-container {
+.about-content .profile-picture-container {
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -30,66 +32,155 @@
     overflow: hidden;
 }
 
-.mobile-about-page .about-page-profile-picture {
+.about-content .about-page-profile-picture {
     width: 100%;
 }
 
 /* ABOUT TEXT SECTION */
-
-.mobile-about-page .background-wallpaper {
+.about-content .background-wallpaper {
     background-image: url("../assets/images/rm378-07c.jpg");
     margin-top: 50px;
+    padding-bottom: 1px;
 }
 
-.mobile-about-page .about-text {
+.about-content .about-text {
     color: #fff;
     text-align: center;
     padding: 3% 5%;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-.mobile-about-page .about-text h3 {
+.about-content .about-text h3 {
     font-family: Quicksand, sans-serif;
     font-size: 30px;
 }
 
-.mobile-about-page .about-text p {
+.about-content .about-text p {
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    line-height: 150%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* TOOLS AND LANGUAGES SECTION */
-
-.mobile-about-page .tools-and-languages-container {
+/* EXPERIENCE, EDUCATION AND SKILLS SECTION */
+.about-content .tools-and-languages-container {
     background-color: #eaf2f2;
     margin: 7%;
     border-radius: 20px;
-    text-align: center;
-    padding: 20px 4%;
+    padding: 20px 5% 32px;
 }
 
-.mobile-about-page .tools-and-languages-container .languages-container {
-    margin: 50px 0;
+.about-columns {
+    display: grid;
+    column-gap: 48px;
 }
 
-.mobile-about-page .tools-and-languages-container h3 {
+.about-content-wide .about-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-block h3 {
     font-family: Quicksand, sans-serif;
-    font-size: 25px;
+    font-size: 24px;
+    color: #25282B;
+    margin: 20px 0 12px;
 }
 
-.mobile-about-page .tools-and-languages-container p {
+.about-block p {
     font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 17px;
+    line-height: 150%;
+    color: #444;
+    margin: 0;
 }
 
-.mobile-about-page .tools-and-languages-container .p-title {
-    font-weight: 600;
-    font-size: 20px;
+.timeline {
+    display: grid;
+    row-gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline li {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    border-left: 3px solid #049394;
+    font-family: Nunito, sans-serif;
+    font-size: 17px;
+    line-height: 140%;
+    color: #444;
+}
+
+.timeline .timeline-period {
+    font-size: 14px;
+    font-weight: 700;
+    color: #049394;
+}
+
+.timeline strong {
+    color: #25282B;
+}
+
+.skills-group {
+    margin-bottom: 14px;
+}
+
+.skills-group .p-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #25282B;
+    margin: 0 0 8px;
+}
+
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-block .tools-container p {
+    background-color: #fff;
+    border: 1px solid #cfe3e3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.cv-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    background-color: #049394;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .1s ease-in-out;
+}
+
+.cv-link:hover {
+    background-color: #006b6b;
 }
 
 /* SAY HELLO BUTTON */
-.mobile-about-page .about-page-contact-section {
+.about-page-contact-section {
     display: flex;
     width: 100%;
     align-items: center;
@@ -102,144 +193,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 24px;
-    height: 50px;
+    padding: 8px 32px;
+    height: 60px;
     font-family: 'Nunito';
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
+    color: #fff;
+    text-decoration: none;
     background-color: #049394;
     border: none;
     border-radius: 40px;
     cursor: pointer;
+    transition: .1s ease-in-out;
 }
 
-.hi-button .link {
-    color: #fff;
+.hi-button:hover {
+    background-color: #006b6b;
 }
-
-/* ======================== BIG SCREEN CSS =================== */
-.big-screen-about-page {
-    display: flex;
-    flex-direction: column;
-}
-
-.big-screen-about-page .intro-banner {
-    text-align: center;
-}
-
-.big-screen-about-page .intro-banner h2 {
-    font-family: Nunito, sans-serif;
-    font-size: 32px;
-}
-
-.big-screen-about-page .intro-banner p {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #6b6b6b;
-}
-
-.big-screen-about-page .profile-picture-container {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    align-self: center;
-    overflow: hidden;
-}
-
-.big-screen-about-page .about-page-profile-picture {
-    width: 100%;
-}
-
-.big-screen-about-page .background-wallpaper {
-    background-image: url("../assets/images/rm378-07c.jpg");
-    margin-top: 50px;
-}
-
-.big-screen-about-page .about-text {
-    color: #fff;
-    text-align: center;
-    padding: 3% 5%;
-}
-
-.big-screen-about-page .about-text h3 {
-    font-family: Quicksand, sans-serif;
-    font-size: 30px;
-}
-
-.big-screen-about-page .about-text p {
-    font-family: Nunito, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.big-screen-about-page .tools-and-languages-container {
-    background-color: #eaf2f2;
-    margin: 7%;
-    border-radius: 20px;
-    text-align: center;
-    padding: 20px 4%;
-}
-
-.big-screen-about-page .tools-and-languages-container .languages-container {
-    margin: 50px 0;
-}
-
-.big-screen-about-page .tools-and-languages-container h3 {
-    font-family: Quicksand, sans-serif;
-    font-size: 25px;
-}
-
-.big-screen-about-page .tools-and-languages-container p {
-    font-family: Nunito, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.big-screen-about-page .tools-and-languages-container .p-title {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-
-
-.big-screen-about-page .skills-banner {
-    background-color: antiquewhite;
-}
-
-.big-screen-about-page .skills-banner img {
-    height: 50px;
-}
-
-/* SAY HELLO BUTTON */
-.big-screen-about-page .about-page-contact-section {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.tools-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .p-title {
-    width: 100%;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .tools-container p {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #333;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  }

@@ -1,0 +1,77 @@
+.merge-diagram {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+.merge-diagram text {
+    text-anchor: middle;
+    font-family: 'Nunito', sans-serif;
+}
+
+.merge-diagram .box {
+    fill: #eaf2f2;
+    stroke: #049394;
+    stroke-width: 1.5;
+}
+
+.merge-diagram .box-database {
+    fill: #fff;
+}
+
+.merge-diagram .box-service {
+    fill: #fff;
+    stroke-dasharray: 5 4;
+}
+
+.merge-diagram .schema {
+    fill: #eaf2f2;
+    stroke: #049394;
+    stroke-width: 1;
+}
+
+.merge-diagram .box-title {
+    font-weight: 700;
+    font-size: 14px;
+    fill: #25282B;
+}
+
+.merge-diagram .box-tech {
+    font-weight: 700;
+    font-size: 12px;
+    fill: #049394;
+}
+
+.merge-diagram .box-info {
+    font-size: 12px;
+    fill: #6b6b6b;
+}
+
+.merge-diagram .schema-name {
+    font-family: Menlo, Consolas, monospace;
+    font-size: 12px;
+    fill: #25282B;
+}
+
+.merge-diagram .schema-info {
+    font-size: 11px;
+    fill: #6b6b6b;
+}
+
+.merge-diagram .services-title {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    fill: #6b6b6b;
+}
+
+.merge-diagram .arrow {
+    fill: none;
+    stroke: #049394;
+    stroke-width: 1.5;
+}
+
+.merge-diagram .arrow-head {
+    fill: #049394;
+}

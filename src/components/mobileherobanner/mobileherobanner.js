@@ -3,29 +3,46 @@ import React from "react";
 import "./mobileherobanner.css";
 
 //import icons from react icons
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaFileDownload } from 'react-icons/fa'
 
 //import images
 import profilePictureSrc from "../../assets/images/Profile Picture.jpeg";
 
+import { useLanguage } from "../../i18n/LanguageContext";
+
 const HeroBannerMobile = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="hero-banner-mobile">
             <div className="hero">
-                <h3>FULL STACK WEB DEVELOPER</h3>
+                <h3>{t.hero.eyebrow}</h3>
                 <div className="hero-banner-img">
-                    <img src={profilePictureSrc} alt="Francisco profile" />
+                    <img src={profilePictureSrc} alt={t.hero.photoAlt} />
                 </div>
                 <h1>Francisco Gontijo</h1>
-                <p>Creating Engaging and User-Friendly Web Experiences:</p>
+                <p>{t.hero.text}</p>
+                <div className="status-badge">
+                    <span className="status-dot"></span>
+                    {t.hero.status}
+                </div>
                 <nav className="hero-nav">
-                    <a href="https://www.linkedin.com/in/franciscogontijo/"
+                    <a className="cv-button" href={`${process.env.PUBLIC_URL}${t.cv.file}`}
                         rel="noreferrer" target="_blank">
-                        <FaLinkedinIn className="social-icon" />
+                        <FaFileDownload /> {t.cv.download}
                     </a>
-                    <a href="https://github.com/FranciscoGontijo" rel="noreferrer" target="_blank">
-                        <FaGithub className="social-icon" />
-                    </a>
+                    <div className="hero-social">
+                        <a href="https://www.linkedin.com/in/franciscogontijo/"
+                            rel="noreferrer" target="_blank" aria-label="LinkedIn">
+                            <FaLinkedinIn className="social-icon" />
+                        </a>
+                        <a href="https://github.com/FranciscoGontijo" rel="noreferrer" target="_blank" aria-label="GitHub">
+                            <FaGithub className="social-icon" />
+                        </a>
+                        <a href="mailto:franciscoacmg@gmail.com" aria-label="E-mail">
+                            <FaEnvelope className="social-icon" />
+                        </a>
+                    </div>
                 </nav>
             </div>
         </section>

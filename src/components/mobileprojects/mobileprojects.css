@@ -1,6 +1,7 @@
 .mobile-projects-container {
     display: grid;
     row-gap: 60px;
+    padding: 0 16px;
 }
 
 .mobile-projects-container .project-title {
@@ -31,6 +32,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +79,8 @@
 
 .mobile-projects-container .project-info h3 {
     font-family: Quicksand, sans-serif;
-    font-size: 30px; 
+    font-size: 30px;
+    margin: 10px 0 0;
 }
 
 .mobile-projects-container .project-info p {
@@ -89,46 +92,51 @@
     color: #6b6b6b;
 }
 
+.mobile-projects-container .project-info .project-meta {
+    margin: 6px 0 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: #049394;
+    text-align: center;
+}
+
+.mobile-projects-container .project-info h4 {
+    font-family: Quicksand, sans-serif;
+    font-size: 19px;
+    color: #25282B;
+    text-align: center;
+    margin: 8px 0 12px;
+}
+
+.mobile-projects-container .project-info .project-note {
+    margin: 20px 0 10px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
 .mobile-projects-container .view-project-container {
     display: flex;
     align-items: center;
+    margin: 24px 0 10px;
 }
 
 .view-project-container a {
     text-decoration: none;
 }
 
-.mobile-projects-container .view-project-button {
-    box-sizing: border-box;
+.mobile-projects-container .carousel-button {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 24px;
-    width: 155px;
-    height: 43px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    color: white;
-    background-color: #049394;
+    padding: 4px;
     border: none;
-    border-radius: 24px;
+    background: none;
     cursor: pointer;
-    margin-right: 60px;
-}
-
-.view-project-container .social-icon {
-    font-size: 43px;
-    color:#049394;
 }
 
 .mobile-projects-container .go-back-image-button {
     position: absolute;
     left: 4%;
-    bottom: 4%;
+    bottom: 3%;
     font-size: 27px;
     color: #049394;
 }
@@ -136,7 +144,7 @@
 .mobile-projects-container .go-next-image-button {
     position: absolute;
     right: 4%;
-    bottom: 4%;
+    bottom: 3%;
     font-size: 27px;
     color: #049394;
 }
@@ -148,7 +156,13 @@
     position: relative;
 }
 
+.mobile-projects-container .project-diagram {
+    width: 100%;
+    padding: 24px 16px 30px;
+}
+
 .mobile-projects-container .project-img img {
+    max-width: 100%;
     max-height: 420px;
-   padding-bottom: 45px;
+    padding-bottom: 45px;
 }

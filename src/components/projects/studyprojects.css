@@ -1,0 +1,83 @@
+.study-projects {
+    margin-top: 10px;
+}
+
+.study-projects h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.study-projects .study-intro {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #6b6b6b;
+    text-align: center;
+    margin: 8px 0 30px;
+}
+
+.study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.study-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    overflow: hidden;
+}
+
+.study-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid #eaf2f2;
+}
+
+.study-card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 18px 20px 20px;
+}
+
+.study-card h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+.study-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6b6b6b;
+    margin: 8px 0 0;
+}
+
+.study-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.study-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #049394;
+    text-decoration: none;
+}
+
+.study-links .social-icon {
+    font-size: 26px;
+    color: #049394;
+}

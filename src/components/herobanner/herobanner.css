@@ -1,7 +1,7 @@
 .hero-banner {
     display: grid;
     grid-template-columns: 65fr 35fr;
-    height: 400px;
+    min-height: 400px;
     margin-bottom: 80px;
     width: 100%;
 }
@@ -42,17 +42,20 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    line-height: 150%;
     color: #6b6b6b;
     margin: 0;
     padding: 0;
+    max-width: 620px;
 }
 
 .hero-banner .hero-nav {
-    height: 46px;
-    width: 60%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 0;
+    column-gap: 30px;
+    row-gap: 16px;
+    margin-top: 28px;
     padding: 0;
 }
 
@@ -60,11 +63,54 @@
     text-decoration: none;
     color:#049394;
     font-size: 24px;
-    margin-top: 20px;
 }
 
-.hero-nav .social-icon {
-    margin-right: 30px;
+/* Selo de disponibilidade e botão do currículo (usados também na versão mobile) */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #25282B;
+}
+
+.status-dot {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1fa463;
+    box-shadow: 0 0 0 4px rgba(31, 164, 99, 0.2);
+}
+
+.hero-nav .cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 24px;
+    background-color: #049394;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .1s ease-in-out;
+}
+
+.hero-banner .hero-nav .cv-button {
+    color: #fff;
+    font-size: 17px;
+}
+
+.hero-nav .cv-button:hover {
+    background-color: #006b6b;
 }
 
 .hero-banner .hero-banner-img {

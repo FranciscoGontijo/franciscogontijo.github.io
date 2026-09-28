@@ -50,9 +50,14 @@
     overflow: hidden;
 }
 
+/* O estudo de caso da Merge é mais longo que os outros cards. */
+.each-project-container.case-study {
+    max-height: none;
+}
+
 .each-project-container .project-info {
     width: 100%;
-    padding: 10% 7%;
+    padding: 7% 7% 8%;
 }
 
 .each-project-container .project-info h3 {
@@ -70,23 +75,76 @@
     color: #6b6b6b;
 }
 
+.each-project-container .project-info .project-meta {
+    margin: 6px 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #049394;
+}
+
+.each-project-container .project-info h4 {
+    font-family: Quicksand, sans-serif;
+    font-size: 20px;
+    color: #25282B;
+    margin: 24px 0 12px;
+}
+
+.highlights {
+    display: grid;
+    row-gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.highlights li {
+    position: relative;
+    padding-left: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6b6b6b;
+}
+
+.highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #049394;
+}
+
+.highlights strong {
+    color: #25282B;
+}
+
+.each-project-container .project-info .project-note {
+    margin: 20px 0 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
 .each-project-container .view-project-container {
     display: flex;
     align-items: center;
+    margin-top: 24px;
 }
 
 .view-project-container a {
     text-decoration: none;
 }
 
-.each-project-container .view-project-container .view-project-button {
+.view-project-button {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 8px 24px;
-    width: 155px;
+    min-width: 155px;
     height: 43px;
     font-family: 'Roboto';
     font-style: normal;
@@ -98,7 +156,11 @@
     border: none;
     border-radius: 24px;
     cursor: pointer;
-    margin-right: 60px;
+    transition: .1s ease-in-out;
+}
+
+.view-project-button:hover {
+    background-color: #006b6b;
 }
 
 .view-project-container .social-icon {
@@ -114,6 +176,11 @@
     overflow: hidden;
     justify-content: center;
     padding: 4%;
+}
+
+.each-project-container .project-diagram {
+    align-items: center;
+    background-color: #f6fafa;
 }
 
 .each-project-container .project-img img {
@@ -150,6 +217,14 @@
 .each-project-container .active-ball {
     border: 1px solid #049394;
     background-color: #049394;
+}
+
+.carousel-button {
+    display: flex;
+    padding: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .each-project-container .go-back-image-button {
