@@ -94,7 +94,7 @@ const content = {
             title: "Sobre mim",
             subtitle: "Da engenharia civil ao software",
             greeting: "Oi, eu sou o Francisco.",
-            text: "Sou desenvolvedor full stack e estudante de Engenharia de Software na Descomplica, com conclusão prevista em 2027. Antes de programar, fui engenheiro civil: trabalhei com projeto e gestão de obras e liderei uma equipe nos Estados Unidos. Comecei a estudar programação em 2022 e hoje sou co-fundador da Merge, onde trabalho de ponta a ponta, do banco de dados ao deploy. Moro em Florianópolis e busco estágio ou vaga júnior.",
+            text: "Sou desenvolvedor full stack e estudante de Engenharia de Software na Descomplica, com conclusão prevista em 2028. Antes de programar, fui engenheiro civil: trabalhei com projeto e gestão de obras e liderei uma equipe nos Estados Unidos. Comecei a estudar programação em 2022 e hoje sou co-fundador da Merge, onde trabalho de ponta a ponta, do banco de dados ao deploy. Moro em Florianópolis e busco estágio ou vaga júnior.",
             experienceTitle: "Experiência",
             experience: [
                 { period: "set/2025 – atual", role: "Co-fundador & Desenvolvedor Full Stack", place: "Merge" },
@@ -103,7 +103,7 @@ const content = {
             ],
             educationTitle: "Formação",
             education: [
-                { period: "2024 – 2027 (previsão)", role: "Bacharelado em Engenharia de Software", place: "Descomplica Faculdade Digital" },
+                { period: "2024 – 2028 (previsão)", role: "Bacharelado em Engenharia de Software", place: "Descomplica Faculdade Digital" },
                 { period: "2018 – 2021", role: "Bacharelado em Engenharia Civil", place: "Centro Universitário UNA" }
             ],
             certificationsTitle: "Certificações",
@@ -228,7 +228,7 @@ const content = {
             title: "About me",
             subtitle: "From civil engineering to software",
             greeting: "Hi, I'm Francisco.",
-            text: "I'm a full-stack developer and a Software Engineering student at Descomplica, graduating in 2027. Before software, I was a civil engineer: I worked on project design and construction management, and led a crew in the United States. I started studying programming in 2022, and today I'm a co-founder of Merge, where I work end to end, from the database to deployment. I live in Florianópolis and I'm looking for internship or junior roles.",
+            text: "I'm a full-stack developer and a Software Engineering student at Descomplica, graduating in 2028. Before software, I was a civil engineer: I worked on project design and construction management, and led a crew in the United States. I started studying programming in 2022, and today I'm a co-founder of Merge, where I work end to end, from the database to deployment. I live in Florianópolis and I'm looking for internship or junior roles.",
             experienceTitle: "Experience",
             experience: [
                 { period: "Sep 2025 – present", role: "Co-founder & Full-Stack Developer", place: "Merge" },
@@ -237,7 +237,7 @@ const content = {
             ],
             educationTitle: "Education",
             education: [
-                { period: "2024 – 2027 (expected)", role: "Bachelor's in Software Engineering", place: "Descomplica Faculdade Digital" },
+                { period: "2024 – 2028 (expected)", role: "Bachelor's in Software Engineering", place: "Descomplica Faculdade Digital" },
                 { period: "2018 – 2021", role: "Bachelor's in Civil Engineering", place: "Centro Universitário UNA" }
             ],
             certificationsTitle: "Certifications",
