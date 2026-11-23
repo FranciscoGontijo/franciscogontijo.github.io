@@ -18,9 +18,9 @@ const content = {
             english: "Currículo em inglês"
         },
         hero: {
-            eyebrow: "Desenvolvedor Full Stack",
+            eyebrow: "Desenvolvedor Full Stack · foco em produto",
             title: "Olá, meu nome é Francisco Gontijo",
-            text: "Construo produtos web e mobile de ponta a ponta, do banco de dados ao deploy. Co-fundador da Merge e estudante de Engenharia de Software.",
+            text: "Transformo problemas de negócio em produtos web e mobile, da definição do fluxo ao deploy. Co-fundador da QuadraON e da Merge e estudante de Engenharia de Software.",
             status: "Aberto a estágio e vagas júnior · Florianópolis ou remoto",
             photoAlt: "Foto de Francisco Gontijo"
         },
@@ -33,27 +33,35 @@ const content = {
             merge: {
                 meta: "Co-fundador & Desenvolvedor Full Stack · set/2025 – atual",
                 intro: "Ecossistema esportivo com três produtos e uma única conta de usuário: gestão de torneios e ingressos para clubes, plataforma para assessorias esportivas e app para atletas. Em produção, com clientes reais.",
-                highlightsTitle: "Problemas que resolvi e decisões que tomei",
+                highlightsTitle: "Decisões de produto e de engenharia",
                 highlights: [
+                    {
+                        title: "Fluxo antes do código.",
+                        text: "Mapeio com os sócios o fluxo do usuário (telas, chamadas e dados) e as regras de negócio antes de implementar, escrevo issues com critérios de aceite e valido cada fluxo na staging antes do lançamento."
+                    },
+                    {
+                        title: "Modelo de receita.",
+                        text: "Participei da mudança de assinatura mensal para taxa por transação (inscrição, reserva e ingresso): o clube começa sem custo fixo e a Merge ganha quando o clube vende. Implementei as mudanças no produto."
+                    },
+                    {
+                        title: "Quem pode fazer o quê.",
+                        text: "Ajudei a definir as regras de acesso: cadastro web só para clubes, painel por convite e recursos liberados conforme a situação da conta de recebimento do clube."
+                    },
                     {
                         title: "Um banco, um schema por produto.",
                         text: "Estruturei o PostgreSQL no Supabase com os schemas core, merge_web e consultancies, nada exposto pela API pública, ambientes de dev e produção separados e migrações versionadas. Conduzi a virada das duas plataformas web para produção."
                     },
                     {
                         title: "Ingresso sem venda a mais.",
-                        text: "Uma trava por evento no PostgreSQL (FOR NO KEY UPDATE NOWAIT, com novas tentativas) impede vender acima da capacidade quando muita gente compra ao mesmo tempo. Descartei o isolamento Serializable, que derrubava compras até em eventos diferentes, e a trava com espera, que prenderia uma conexão do banco para cada comprador."
+                        text: "Desenhei a venda a partir dos riscos do negócio: nunca vender acima da capacidade, limite por comprador e venda só para clubes com conta de recebimento aprovada. Para a capacidade, uma trava por evento no PostgreSQL (FOR NO KEY UPDATE NOWAIT, com novas tentativas) impede vender acima da capacidade quando muita gente compra ao mesmo tempo. Descartei o isolamento Serializable, que derrubava compras até em eventos diferentes, e a trava com espera, que prenderia uma conexão do banco para cada comprador."
                     },
                     {
                         title: "Um clube não enxerga o outro.",
                         text: "Fechei 4 falhas de acesso indevido (IDOR), 3 delas entre clubes, e passei a aplicar as permissões por papel no servidor, com testes automatizados."
                     },
                     {
-                        title: "Tempo real.",
-                        text: "Atualizações com Pusher em canais privados que negam acesso por padrão: o organizador vê as inscrições mudarem na hora, e o app recebe as notificações."
-                    },
-                    {
-                        title: "Deploy seguro.",
-                        text: "Backup automático e bloqueio de SQL destrutivo antes de cada migração em produção."
+                        title: "Tempo real e deploy seguro.",
+                        text: "O organizador vê as inscrições mudarem na hora (Pusher, em canais privados). Cada migração em produção passa antes por backup automático e bloqueio de SQL destrutivo."
                     }
                 ],
                 note: "O código é privado. Conto os detalhes numa conversa.",
@@ -78,8 +86,9 @@ const content = {
             quadraon: {
                 meta: "Co-fundador & Desenvolvedor Full Stack · set/2024 – nov/2025",
                 paragraphs: [
-                    "Plataforma de reserva e gestão de quadras esportivas, conectando jogadores a donos de quadras. A ideia foi minha, e fui responsável pela arquitetura e pelo desenvolvimento de ponta a ponta: reservas por horário e Day-Use, geração automática de horários semanais, tratamento de fuso horário e reserva sem login.",
-                    "O produto ficou pronto e no ar, mas não conquistamos clientes: faltou estrutura de marketing e vendas. Foi o aprendizado que levei para a Merge."
+                    "Plataforma de reserva e gestão de quadras esportivas, conectando jogadores a donos de quadras. A ideia foi minha, e levei o produto do conceito ao MVP no ar: defini o público, as funcionalidades e a experiência de reserva, e fiz a arquitetura e o desenvolvimento.",
+                    "As decisões de produto miraram o atrito: reserva como convidado, sem criar conta; reservas por horário e Day-Use; e agenda semanal gerada automaticamente, para o dono da quadra não montar horário por horário.",
+                    "O produto ficou pronto, mas não conquistamos clientes: faltou estratégia de entrada no mercado. A lição de validar cliente e distribuição antes do código guia hoje como priorizo o trabalho na Merge."
                 ]
             },
             studyTitle: "Projetos de estudo",
@@ -94,7 +103,7 @@ const content = {
             title: "Sobre mim",
             subtitle: "Da engenharia civil ao software",
             greeting: "Oi, eu sou o Francisco.",
-            text: "Sou desenvolvedor full stack e estudante de Engenharia de Software na Descomplica, com conclusão prevista em 2028. Antes de programar, fui engenheiro civil: trabalhei com projeto e gestão de obras e liderei uma equipe nos Estados Unidos. Comecei a estudar programação em 2022 e hoje sou co-fundador da Merge, onde trabalho de ponta a ponta, do banco de dados ao deploy. Moro em Florianópolis e busco estágio ou vaga júnior.",
+            text: "Sou desenvolvedor full stack e estudante de Engenharia de Software na Descomplica, com conclusão prevista em 2028. Antes de programar, fui engenheiro civil: trabalhei com projeto e gestão de obras e liderei uma equipe nos Estados Unidos. Comecei a estudar programação em 2022 e hoje sou co-fundador da Merge, onde participo das decisões de produto com os sócios e as transformo em software, do banco de dados ao deploy. Da engenharia trouxe o hábito de pensar em custo, prazo e risco antes de construir. Moro em Florianópolis e busco estágio ou vaga júnior.",
             experienceTitle: "Experiência",
             experience: [
                 { period: "set/2025 – atual", role: "Co-fundador & Desenvolvedor Full Stack", place: "Merge" },
@@ -152,9 +161,9 @@ const content = {
             english: "Resume in English"
         },
         hero: {
-            eyebrow: "Full-Stack Developer",
+            eyebrow: "Product-Minded Full-Stack Developer",
             title: "Hello, my name is Francisco Gontijo",
-            text: "I build web and mobile products end to end, from the database to deployment. Co-founder of Merge and Software Engineering student.",
+            text: "I turn business problems into web and mobile products, from defining the user flow to deployment. Co-founder of QuadraON and Merge, and Software Engineering student.",
             status: "Open to internship and junior roles · Florianópolis or remote",
             photoAlt: "Photo of Francisco Gontijo"
         },
@@ -167,27 +176,35 @@ const content = {
             merge: {
                 meta: "Co-founder & Full-Stack Developer · Sep 2025 – present",
                 intro: "A sports platform with three products and a single user account: tournament and ticketing management for clubs, a platform for coaching businesses, and an app for athletes. Live in production, with real customers.",
-                highlightsTitle: "Problems I solved and decisions I made",
+                highlightsTitle: "Product and engineering decisions",
                 highlights: [
+                    {
+                        title: "Flow before code.",
+                        text: "I map user flows (screens, calls and data) and business rules with my co-founders before building, write issues with acceptance criteria, and validate each flow in staging before release."
+                    },
+                    {
+                        title: "Revenue model.",
+                        text: "Took part in moving from a monthly subscription to per-transaction fees (registrations, bookings and tickets): clubs start with no fixed cost, and Merge earns when they sell. I implemented the changes in the product."
+                    },
+                    {
+                        title: "Who can do what.",
+                        text: "Helped define access rules: web sign-up for clubs only, an invite-only admin panel, and features unlocked by the status of the club's payout account."
+                    },
                     {
                         title: "One database, one schema per product.",
                         text: "Designed the PostgreSQL database on Supabase with the core, merge_web and consultancies schemas, nothing exposed through the public API, separate dev and production environments and versioned migrations. Led the production cutover of both web platforms."
                     },
                     {
                         title: "No overselling.",
-                        text: "A per-event PostgreSQL lock (FOR NO KEY UPDATE NOWAIT, with retries) keeps ticket sales within capacity when many people buy at once. I ruled out Serializable isolation, which aborted purchases even across different events, and a waiting lock, which would hold one database connection per buyer."
+                        text: "I designed ticket sales around business risks: never sell above capacity, per-buyer limits, and sales only for clubs with an approved payout account. For capacity, a per-event PostgreSQL lock (FOR NO KEY UPDATE NOWAIT, with retries) keeps ticket sales within capacity when many people buy at once. I ruled out Serializable isolation, which aborted purchases even across different events, and a waiting lock, which would hold one database connection per buyer."
                     },
                     {
                         title: "Clubs can't see each other.",
                         text: "Fixed 4 broken access control (IDOR) flaws, 3 of them across clubs, and moved role-based permissions to server-side enforcement, with automated tests."
                     },
                     {
-                        title: "Real time.",
-                        text: "Pusher updates on private channels that deny by default: organizers see registrations change live, and the app receives notifications."
-                    },
-                    {
-                        title: "Safe deploys.",
-                        text: "Automatic backup and a destructive-SQL guard before every production migration."
+                        title: "Real time and safe deploys.",
+                        text: "Organizers see registrations change live (Pusher, on private channels). Every production migration runs after an automatic backup and a destructive-SQL guard."
                     }
                 ],
                 note: "The code is private. Happy to walk you through it in a conversation.",
@@ -212,8 +229,9 @@ const content = {
             quadraon: {
                 meta: "Co-founder & Full-Stack Developer · Sep 2024 – Nov 2025",
                 paragraphs: [
-                    "A sports court booking and management platform connecting players and court owners. It was my idea, and I owned the architecture and end-to-end development: hourly and day-use bookings, automatic weekly slot generation, time zone handling and guest checkout.",
-                    "The product shipped and went live, but we never landed customers: we lacked marketing and sales. That lesson came with me to Merge."
+                    "A sports court booking and management platform connecting players and court owners. It was my idea, and I took the product from concept to a live MVP: I defined the audience, the features and the booking experience, and owned the architecture and development.",
+                    "The product decisions targeted friction: guest booking without an account, hourly and day-use bookings, and weekly schedules generated automatically, so court owners don't set up slots one by one.",
+                    "The product was finished, but we never landed customers: we lacked a go-to-market strategy. The lesson, to validate customers and distribution before code, now guides how I prioritize work at Merge."
                 ]
             },
             studyTitle: "Study projects",
@@ -228,7 +246,7 @@ const content = {
             title: "About me",
             subtitle: "From civil engineering to software",
             greeting: "Hi, I'm Francisco.",
-            text: "I'm a full-stack developer and a Software Engineering student at Descomplica, graduating in 2028. Before software, I was a civil engineer: I worked on project design and construction management, and led a crew in the United States. I started studying programming in 2022, and today I'm a co-founder of Merge, where I work end to end, from the database to deployment. I live in Florianópolis and I'm looking for internship or junior roles.",
+            text: "I'm a full-stack developer and a Software Engineering student at Descomplica, graduating in 2028. Before software, I was a civil engineer: I worked on project design and construction management, and led a crew in the United States. I started studying programming in 2022, and today I'm a co-founder of Merge, where I take part in product decisions with my co-founders and turn them into software, from the database to deployment. Engineering taught me to think about cost, deadlines and risk before building. I live in Florianópolis and I'm looking for internship or junior roles.",
             experienceTitle: "Experience",
             experience: [
                 { period: "Sep 2025 – present", role: "Co-founder & Full-Stack Developer", place: "Merge" },
